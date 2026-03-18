@@ -1,7 +1,7 @@
 /**
  * componentes.js
- * Carga navbar, footer y player en todas las páginas.
- * Despacha el evento "playerReady" cuando el player HTML está en el DOM.
+ * Carga navbar y footer (que incluye el player) en todas las páginas.
+ * Los archivos viven en /componentes/ y se editan directamente ahí.
  */
 
 async function loadComponent(containerId, url) {
@@ -20,8 +20,7 @@ async function loadComponent(containerId, url) {
 document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("navbar-container", "./componentes/navbar.html");
     await loadComponent("footer-container", "./componentes/footer.html");
-    await loadComponent("player-container", "./componentes/player.html");
 
-    // Avisar a player.js que el HTML ya está en el DOM
+    // El player vive dentro de footer.html, avisamos cuando está listo
     document.dispatchEvent(new CustomEvent("playerReady"));
 });

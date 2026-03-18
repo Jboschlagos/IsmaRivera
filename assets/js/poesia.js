@@ -28,7 +28,7 @@ function createBookCard(book) {
     : `<div class="book-img-placeholder"></div>`;
 
   return `
-    <article class="col-6 col-md-4 col-lg-3">
+    <article class="col-12 col-md-6 col-lg-3">
       <figure class="poesia-card">
         ${imagen}
         <figcaption>

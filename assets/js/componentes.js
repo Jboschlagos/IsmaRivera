@@ -13,13 +13,13 @@ async function loadComponent(containerId, url) {
         if (!resp.ok) throw new Error(`No se pudo cargar: ${url}`);
         container.innerHTML = await resp.text();
     } catch (err) {
-        console.warn(`[componentes.js] ${err.message}`);
+        console.error(`[componentes.js] ${err.message}`);
     }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-    await loadComponent("navbar-container", "./componentes/navbar.html");
-    await loadComponent("footer-container", "./componentes/footer.html");
+    await loadComponent("navbar-container", "/componentes/navbar.html");
+    await loadComponent("footer-container", "/componentes/footer.html");
 
     // El player vive dentro de footer.html, avisamos cuando está listo
     document.dispatchEvent(new CustomEvent("playerReady"));

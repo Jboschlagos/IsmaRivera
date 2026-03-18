@@ -1,34 +1,29 @@
 /**
  * player.js — Reproductor flotante Isma Rivera
- *
- * Espera el evento "playerReady" de componentes.js antes de iniciar,
- * para asegurarse que el HTML del player ya está en el DOM.
- *
- * PLAYLIST: editá este array para agregar o quitar canciones.
- * Campos:
- *   titulo → nombre de la canción
- *   disco  → nombre del disco
- *   src    → ruta al .mp3 desde la raíz del sitio
+ * El elemento <audio> se crea desde JS para evitar que
+ * innerHTML lo elimine al cargar el componente.
  */
 
 const PLAYLIST = [
     {
         titulo: "A mí también me duele Chile",
         disco: "La última cena de los buitres",
-        src: "./assets/audio/A_mi_también_me_duele_Chile_Isma_Rivera.mp3"
+        src: "/assets/audio/A_mi_también_me_duele_Chile_Isma_Rivera.mp3"
     },
     {
         titulo: "Constelación de los caídos",
         disco: "La última cena de los buitres",
-        src: "./assets/audio/Constelacion_de_los_caidos_Isma_rivera.mp3"
+        src: "/assets/audio/Constelacion_de_los_caidos_Isma_rivera.mp3"
     }
 ];
 
-// ── Init al evento playerReady ────────────────────────────
-document.addEventListener("playerReady", initPlayer);
+if (document.getElementById("btn-play")) {
+    initPlayer();
+} else {
+    document.addEventListener("playerReady", initPlayer);
+}
 
 function initPlayer() {
-    const audio = document.getElementById("audio-engine");
     const playerBar = document.getElementById("audio-player");
     const btnPlay = document.getElementById("btn-play");
     const btnPrev = document.getElementById("btn-prev");
@@ -39,28 +34,29 @@ function initPlayer() {
     const labelDisco = document.getElementById("player-disco");
     const volSlider = document.getElementById("volume-slider");
 
-    // Si algún elemento no existe, salir silenciosamente
-    if (!audio || !playerBar || !btnPlay) return;
+    if (!playerBar || !btnPlay) {
+        console.warn("[player.js] Elementos del player no encontrados");
+        return;
+    }
+
+    // Crear el elemento audio desde JS
+    const audio = document.createElement("audio");
+    audio.preload = "metadata";
+    document.body.appendChild(audio);
 
     let indice = 0;
     let iniciado = false;
 
-    // ── Cargar tema ────────────────────────────────────────
     function cargarTema(i, autoplay = false) {
         if (!PLAYLIST.length) return;
         indice = (i + PLAYLIST.length) % PLAYLIST.length;
         const tema = PLAYLIST[indice];
-
         audio.src = tema.src;
         labelTitulo.textContent = tema.titulo;
         labelDisco.textContent = tema.disco;
-
-        if (autoplay) {
-            audio.play().catch(() => { });
-        }
+        if (autoplay) audio.play().catch(e => console.warn("[player.js]", e));
     }
 
-    // ── Play / Pause ───────────────────────────────────────
     function togglePlay() {
         if (!iniciado) {
             cargarTema(indice, true);
@@ -70,7 +66,6 @@ function initPlayer() {
         audio.paused ? audio.play() : audio.pause();
     }
 
-    // ── Íconos ─────────────────────────────────────────────
     audio.addEventListener("play", () => {
         iconPlay.style.display = "none";
         iconPause.style.display = "block";
@@ -83,20 +78,11 @@ function initPlayer() {
         playerBar.classList.remove("playing");
     });
 
-    // Avanzar al siguiente al terminar
-    audio.addEventListener("ended", () => {
-        cargarTema(indice + 1, true);
-    });
+    audio.addEventListener("ended", () => cargarTema(indice + 1, true));
 
-    // ── Botones ────────────────────────────────────────────
     btnPlay.addEventListener("click", togglePlay);
-
-    btnNext.addEventListener("click", () => {
-        cargarTema(indice + 1, !audio.paused);
-    });
-
+    btnNext.addEventListener("click", () => cargarTema(indice + 1, !audio.paused));
     btnPrev.addEventListener("click", () => {
-        // Si lleva más de 3 segundos → reiniciar; si no → tema anterior
         if (audio.currentTime > 3) {
             audio.currentTime = 0;
         } else {
@@ -104,15 +90,12 @@ function initPlayer() {
         }
     });
 
-    // ── Volumen ────────────────────────────────────────────
     audio.volume = parseFloat(volSlider.value);
     volSlider.addEventListener("input", () => {
         audio.volume = parseFloat(volSlider.value);
     });
 
-    // ── Estado inicial: mostrar primer tema sin reproducir ─
-    if (PLAYLIST.length) {
-        labelTitulo.textContent = PLAYLIST[0].titulo;
-        labelDisco.textContent = PLAYLIST[0].disco;
-    }
+    // Mostrar primer tema sin reproducir
+    labelTitulo.textContent = PLAYLIST[0].titulo;
+    labelDisco.textContent = PLAYLIST[0].disco;
 }

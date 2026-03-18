@@ -40,7 +40,7 @@ function createAlbumCard(album) {
     : "";
 
   return `
-    <article class="col-12 col-md-6 col-lg-4">
+    <article class="col-12 col-md-6 col-lg-3">
       <div class="album-card">
         ${imagen}
         <div class="album-body">

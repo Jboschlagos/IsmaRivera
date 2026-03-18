@@ -1,0 +1,139 @@
+/* prensa.css — hereda variables de style.css */
+
+.prensa-content {
+  padding-top: 110px;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+/* TÍTULO */
+.prensa-content h1 {
+  color: var(--ocre);
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin-bottom: 3rem;
+}
+
+/* LISTA */
+.prensa-lista {
+  max-width: 860px;
+}
+
+/* ITEM — texto izquierda, imagen derecha */
+.prensa-item {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.prensa-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* AÑO */
+.prensa-year {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--ocre);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+/* TÍTULO NOTA */
+.prensa-body h3 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--blanco);
+  margin-bottom: 0.25rem;
+}
+
+/* TIPO */
+.prensa-tipo {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--blanco);
+  opacity: 0.4;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* EXTRACTO */
+.prensa-extracto {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+/* LINK */
+.prensa-link {
+  font-size: 0.82rem;
+  color: var(--ocre);
+  text-decoration: none;
+  opacity: 0.7;
+  letter-spacing: 0.05em;
+  transition: opacity var(--transicion);
+}
+
+.prensa-link:hover {
+  opacity: 1;
+}
+
+/* IMAGEN */
+.prensa-img {
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.prensa-img img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  opacity: 0.8;
+  transition: opacity var(--transicion);
+}
+
+.prensa-item:hover .prensa-img img {
+  opacity: 1;
+}
+
+/* CONTACTO */
+.prensa-contacto {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  opacity: 0.5;
+  font-size: 0.88rem;
+}
+
+.prensa-contacto a {
+  color: var(--blanco);
+  text-decoration: none;
+  transition: color var(--transicion);
+}
+
+.prensa-contacto a:hover {
+  color: var(--ocre);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .prensa-item {
+    grid-template-columns: 1fr;
+  }
+
+  .prensa-img {
+    order: -1;
+  }
+
+  .prensa-img img {
+    aspect-ratio: 16 / 9;
+  }
+}

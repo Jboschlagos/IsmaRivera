@@ -1,0 +1,101 @@
+/* poesia.css — hereda variables de style.css */
+
+/* CONTENIDO */
+.poesia-content {
+  padding-top: 90px;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+/* CABECERA */
+.poesia-header {
+  margin-bottom: 3rem;
+}
+
+.poesia-header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--ocre);
+  margin-bottom: 0.4rem;
+}
+
+.poesia-header p {
+  opacity: 0.45;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+/* CARD LIBRO */
+.poesia-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--negro);
+  margin: 0;
+  transition: transform var(--transicion);
+}
+
+.poesia-card:hover {
+  transform: translateY(-5px);
+}
+
+.poesia-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+  opacity: 0.85;
+}
+
+.poesia-card:hover img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* PLACEHOLDER SIN IMAGEN */
+.book-img-placeholder {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: #1a1a1a;
+}
+
+/* CAPTION */
+.poesia-card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.poesia-card h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ocre);
+  letter-spacing: 0.03em;
+}
+
+.poesia-card span {
+  font-size: 0.78rem;
+  opacity: 0.5;
+  color: var(--blanco);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .poesia-header h1 {
+    font-size: 2rem;
+  }
+}

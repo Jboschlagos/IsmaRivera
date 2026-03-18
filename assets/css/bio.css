@@ -1,0 +1,78 @@
+/* bio.css — hereda variables de style.css */
+
+.bio-content {
+  padding-top: 110px;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+/* TÍTULO */
+.bio-content h1 {
+  color: var(--ocre);
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin-bottom: 2rem;
+}
+
+/* TEXTO */
+.bio-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  opacity: 0.85;
+  margin-bottom: 1.25rem;
+  max-width: 560px;
+}
+
+.bio-text p:first-of-type {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* LINK DOSSIER */
+.dossier-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--ocre);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  transition: opacity var(--transicion);
+}
+
+.dossier-link:hover {
+  opacity: 1;
+  color: var(--ocre);
+}
+
+/* FOTO */
+.bio-foto {
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bio-foto img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: filter var(--transicion);
+}
+
+.bio-foto:hover img {
+  filter: grayscale(0%);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .bio-content h1 {
+    font-size: 2rem;
+  }
+
+  /* En móvil la foto va arriba */
+  .bio-foto {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Obra poética de Isma Rivera — Libros y textos"
+    />
+    <title>Poesía | Isma Rivera</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/poesia.css" />
+    <link rel="stylesheet" href="./assets/css/player.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+
+    <!-- CONTENIDO -->
+    <main class="container-fluid poesia-content">
+      <a href="index.html" class="back-btn">← Volver</a>
+
+      <header class="poesia-header">
+        <h1>Poesía</h1>
+        <p>Libros · Cuadernos · Textos</p>
+      </header>
+
+      <section class="container">
+        <div class="row g-4" id="books-container">
+          <!-- Se carga dinámicamente desde data.js -->
+        </div>
+      </section>
+    </main>
+
+    <!-- PLAYER -->
+    <div id="player-container"></div>
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/componentes.js"></script>
+    <script src="./assets/js/poesia.js"></script>
+    <script src="./assets/js/player.js"></script>
+  </body>
+</html>

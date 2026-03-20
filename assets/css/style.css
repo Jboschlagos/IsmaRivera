@@ -13,16 +13,13 @@ html {
 
 /* =========================
    VARIABLES GLOBALES
-   Editá solo aquí para
-   cambiar colores en todo
-   el sitio.
 ========================= */
 :root {
   --negro: #0b0b0b;
   --negro-suave: #111111;
   --blanco: #f2f2f2;
   --ocre: #b07d2b;
-  --azul: #23395d;
+  --azul: #1a2b45;
   --transicion: 0.3s ease;
 }
 
@@ -41,24 +38,35 @@ body {
 
 /* =========================
    NAVBAR
+   Sin overflow:hidden para
+   que el menú móvil se pueda
+   desplegar correctamente.
 ========================= */
 .navbar {
+  height: 65px;
+  padding-top: 0;
+  padding-bottom: 0;
   backdrop-filter: blur(10px);
   background-color: rgba(80, 80, 80, 0.95) !important;
   border-bottom: 1px solid rgba(176, 125, 43, 0.15);
 }
 
 .navbar-brand {
-  font-size: 1.2rem;
-  letter-spacing: 0.12em;
-  font-weight: 300;
-  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.navbar-brand img {
+  height: 75px;
+  width: auto;
 }
 
 .nav-link {
-  font-size: 1 rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.85) !important;
   transition: color var(--transicion);
   position: relative;
 }
@@ -83,6 +91,22 @@ body {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 80%;
+}
+
+/* =========================
+   MENÚ MÓVIL
+========================= */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none;
+    width: 100%;
+    background-color: rgba(80, 80, 80, 0.98);
+    padding: 1rem;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
 }
 
 /* =========================
@@ -131,7 +155,6 @@ body {
   opacity: 1;
 }
 
-/* OVERLAY */
 .module-overlay {
   position: absolute;
   inset: 0;
@@ -254,28 +277,4 @@ body {
   .module-overlay h2 {
     font-size: 1.5rem;
   }
-}
-.navbar {
-  height: 65px;
-  overflow: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar-brand img {
-  height: 75px;
-  width: auto;
-}
-
-.navbar {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-.nav-link {
-  color: rgba(0, 0, 0, 0.85) !important;
-}
-
-.navbar-brand {
-  color: rgba(0, 0, 0, 0.85) !important;
 }

@@ -3,8 +3,6 @@
    hereda variables de style.css
    =================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Cormorant+Garamond:ital,wght@1,300&display=swap");
-
 :root {
   --player-h: 64px;
 }

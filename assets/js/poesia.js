@@ -1,40 +1,36 @@
 /**
  * poesia.js
- * Renderiza la grilla de libros desde data.js
+ * Renderiza la grilla de libros desde data.js.
+ * El router llama a renderBooks() después de cargar el fragmento.
  */
 
-document.addEventListener("DOMContentLoaded", () => {
+function renderBooks() {
   const container = document.getElementById("books-container");
   if (!container) return;
 
   const books = window.ISMA_DATA?.books || [];
 
   if (books.length === 0) {
-    container.innerHTML = `
-      <div class="col-12 text-center opacity-50">
-        <p>No hay libros disponibles por el momento.</p>
-      </div>`;
+    container.innerHTML = `<div class="col-12 text-center opacity-50"><p>No hay libros disponibles.</p></div>`;
     return;
   }
 
-  books.forEach(book => {
-    container.innerHTML += createBookCard(book);
-  });
-});
+  container.innerHTML = books.map(book => {
+    const imagen = book.image
+      ? `<img src="${book.image}" alt="${book.title}">`
+      : `<div class="book-img-placeholder"></div>`;
 
-function createBookCard(book) {
-  const imagen = book.image
-    ? `<img src="${book.image}" alt="${book.title}">`
-    : `<div class="book-img-placeholder"></div>`;
-
-  return `
-    <article class="col-12 col-md-6 col-lg-3">
-      <figure class="poesia-card">
-        ${imagen}
-        <figcaption>
-          <h3>${book.title}</h3>
-          <span>${book.year}</span>
-        </figcaption>
-      </figure>
-    </article>`;
+    return `
+      <article class="col-6 col-md-4 col-lg-3">
+        <figure class="poesia-card">
+          ${imagen}
+          <figcaption>
+            <h3>${book.title}</h3>
+            <span>${book.year}</span>
+          </figcaption>
+        </figure>
+      </article>`;
+  }).join("");
 }
+
+window.renderBooks = renderBooks;

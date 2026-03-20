@@ -14,58 +14,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/musica.css" />
+    <link rel="stylesheet" href="/assets/css/poesia.css" />
+    <link rel="stylesheet" href="/assets/css/bio.css" />
+    <link rel="stylesheet" href="/assets/css/prensa.css" />
     <link rel="stylesheet" href="/assets/css/player.css" />
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- NAVBAR permanente -->
     <div id="navbar-container"></div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="container-fluid content">
-      <section class="row g-0 g-md-4 mt-5 pt-4">
-        <!-- Música -->
-        <article class="col-12 col-md-6">
-          <a href="musica.html" class="module-link">
-            <figure class="module-card musica">
-              <img
-                src="/assets/img/Musica.jpg"
-                alt="Obras musicales de Isma Rivera"
-              />
-              <figcaption class="module-overlay">
-                <h2>Música</h2>
-                <p>Discos y canciones</p>
-                <div class="module-meta"><span>3 discos</span></div>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
+    <!-- CONTENIDO DINÁMICO -->
+    <div id="contenido"></div>
 
-        <!-- Poesía -->
-        <article class="col-12 col-md-6">
-          <a href="poesia.html" class="module-link">
-            <figure class="module-card poesia">
-              <img
-                src="/assets/img/texto.jpeg"
-                alt="Obras poéticas de Isma Rivera"
-              />
-              <figcaption class="module-overlay">
-                <h2>Poesía</h2>
-                <p>Libros y textos</p>
-                <div class="module-meta"><span>4 libros</span></div>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
+    <!-- FOOTER + PLAYER permanentes -->
     <div id="footer-container"></div>
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/data.js"></script>
     <script src="/assets/js/componentes.js"></script>
+    <script src="/assets/js/musica.js"></script>
+    <script src="/assets/js/poesia.js"></script>
     <script src="/assets/js/player.js"></script>
   </body>
 </html>

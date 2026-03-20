@@ -13,7 +13,7 @@ const DATA = {
       description: "",
       image: "./assets/img/discos/ultimacena.png",
       spotify: "https://open.spotify.com/intl-es/album/6CtCJ71uUcKSs59ZmALo08?si=vQ_4hc5oQPex5WhYBRHzwQ",
-      bandcamp: "https://ismarivera.bandcamp.com/album/la-ultima-cena",
+      bandcamp: "selloprecario.bandcamp.com/album/la-ltima-cena-de-los-buitres",
     },
     {
       title: "El Silencio",
@@ -29,7 +29,7 @@ const DATA = {
       description: "",
       image: "/assets/img/discos/errantes.png",
       spotify: "https://open.spotify.com/album/ejemplo3",
-      bandcamp: "https://ismarivera.bandcamp.com/album/errantes",
+      bandcamp: "https://selloprecario.bandcamp.com/album/desbaut-zame",
     },
   ],
 

@@ -17,7 +17,7 @@ function renderBooks() {
 
   container.innerHTML = books.map(book => {
     const imagen = book.image
-      ? `<img src="${book.image}" alt="${book.title}">`
+      ? `<img src="${book.image}" alt="${book.title}" loading="lazy">`
       : `<div class="book-img-placeholder"></div>`;
 
     return `

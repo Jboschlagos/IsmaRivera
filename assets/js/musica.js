@@ -17,7 +17,7 @@ function renderAlbums() {
 
   container.innerHTML = albums.map(album => {
     const imagen = album.image
-      ? `<img src="${album.image}" alt="${album.title}">`
+      ? `<img src="${album.image}" alt="${album.title}" loading="lazy">`
       : `<div class="album-img-placeholder"></div>`;
 
     const descripcion = album.description
@@ -25,8 +25,8 @@ function renderAlbums() {
       : "";
 
     const links = [];
-    if (album.spotify) links.push(`<a href="${album.spotify}"  target="_blank" class="album-link">Spotify</a>`);
-    if (album.bandcamp) links.push(`<a href="${album.bandcamp}" target="_blank" class="album-link">Bandcamp</a>`);
+    if (album.spotify) links.push(`<a href="${album.spotify}" target="_blank" rel="noopener noreferrer" class="album-link">Spotify</a>`);
+    if (album.bandcamp) links.push(`<a href="${album.bandcamp}" target="_blank" rel="noopener noreferrer" class="album-link">Bandcamp</a>`);
     const meta = links.length ? `<div class="album-links">${links.join("")}</div>` : "";
 
     return `

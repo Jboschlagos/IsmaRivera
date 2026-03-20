@@ -7,10 +7,17 @@
  *
  * MEJORAS FUTURAS:
  * - Agregar transiciones/animaciones entre páginas (fade in/out)
- * - Agregar meta tags dinámicos por página (title, description)
  * - Lazy loading de imágenes en cards
  * - Precarga de fragmentos al hacer hover en los links
  */
+
+const PAGE_TITLES = {
+    home: "Isma Rivera | Poeta Cantor",
+    musica: "Música | Isma Rivera",
+    poesia: "Poesía | Isma Rivera",
+    bio: "Bio | Isma Rivera",
+    prensa: "Prensa | Isma Rivera",
+};
 
 // ── Cargar componente estático ─────────────────────────────────
 async function loadComponent(containerId, url) {
@@ -29,6 +36,9 @@ async function loadComponent(containerId, url) {
 async function loadPage(page) {
     const contenido = document.getElementById("contenido");
     if (!contenido) return;
+
+    // Actualizar título de la pestaña
+    document.title = PAGE_TITLES[page] || "Isma Rivera | Poeta Cantor";
 
     try {
         const resp = await fetch(`/componentes/${page}.html`);
@@ -51,7 +61,6 @@ async function loadPage(page) {
         bindLinks();
 
         // Cerrar menú móvil si está abierto
-        // MEJORA FUTURA: animación de cierre suave
         const menu = document.querySelector('#navbarMenu');
         if (menu) menu.classList.remove('show');
 
@@ -82,8 +91,6 @@ function bindLinks() {
 }
 
 // ── Inicializar menú hamburguesa manualmente ───────────────────
-// Bootstrap Collapse no funciona bien con navbar cargado dinámicamente
-// MEJORA FUTURA: evaluar migrar a Bootstrap nativo si se pre-renderiza el navbar
 function initHamburger() {
     const toggler = document.querySelector('.navbar-toggler');
     const menu = document.querySelector('#navbarMenu');
@@ -98,24 +105,19 @@ function initHamburger() {
 document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("navbar-container", "/componentes/navbar.html");
 
-    // Inicializar hamburguesa después de cargar el navbar
     initHamburger();
 
     await loadComponent("footer-container", "/componentes/footer.html");
 
-    // El player vive en footer, avisamos que está listo
     document.dispatchEvent(new CustomEvent("playerReady"));
 
-    // Cargar página inicial según hash o home por defecto
     const page = location.hash.replace("#", "") || "home";
     await loadPage(page);
 
-    // Registrar links del navbar
     bindLinks();
 });
 
 // ── Manejar botón atrás/adelante del browser ───────────────────
-// MEJORA FUTURA: restaurar posición de scroll por página
 window.addEventListener("popstate", e => {
     const page = e.state?.page || "home";
     loadPage(page);

@@ -91,7 +91,7 @@ body {
 .content {
   background: var(--negro-suave);
   min-height: 100vh;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   padding-top: 56px;
 }
 

@@ -4,6 +4,12 @@
  * Carga navbar y footer una sola vez.
  * Navega entre páginas cargando fragmentos HTML en #contenido
  * sin recargar el browser — el player nunca se interrumpe.
+ *
+ * MEJORAS FUTURAS:
+ * - Agregar transiciones/animaciones entre páginas (fade in/out)
+ * - Agregar meta tags dinámicos por página (title, description)
+ * - Lazy loading de imágenes en cards
+ * - Precarga de fragmentos al hacer hover en los links
  */
 
 // ── Cargar componente estático ─────────────────────────────────
@@ -44,6 +50,11 @@ async function loadPage(page) {
         // Registrar clicks de la nueva página
         bindLinks();
 
+        // Cerrar menú móvil si está abierto
+        // MEJORA FUTURA: animación de cierre suave
+        const menu = document.querySelector('#navbarMenu');
+        if (menu) menu.classList.remove('show');
+
         // Actualizar URL sin recargar
         history.pushState({ page }, "", `#${page}`);
 
@@ -58,23 +69,37 @@ function bindLinks() {
         el.addEventListener("click", e => {
             e.preventDefault();
             const page = el.dataset.page;
+
+            // Contacto hace scroll al footer en vez de cargar página
             if (page === "contacto") {
                 document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
                 return;
             }
+
             loadPage(page);
         });
     });
+}
+
+// ── Inicializar menú hamburguesa manualmente ───────────────────
+// Bootstrap Collapse no funciona bien con navbar cargado dinámicamente
+// MEJORA FUTURA: evaluar migrar a Bootstrap nativo si se pre-renderiza el navbar
+function initHamburger() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('#navbarMenu');
+    if (toggler && menu) {
+        toggler.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    }
 }
 
 // ── Init ───────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("navbar-container", "/componentes/navbar.html");
 
-    // Reinicializar Bootstrap para el navbar dinámico
-    document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(el => {
-        new bootstrap.Collapse(el.getAttribute('data-bs-target'), { toggle: false });
-    });
+    // Inicializar hamburguesa después de cargar el navbar
+    initHamburger();
 
     await loadComponent("footer-container", "/componentes/footer.html");
 
@@ -90,6 +115,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 // ── Manejar botón atrás/adelante del browser ───────────────────
+// MEJORA FUTURA: restaurar posición de scroll por página
 window.addEventListener("popstate", e => {
     const page = e.state?.page || "home";
     loadPage(page);

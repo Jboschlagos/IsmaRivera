@@ -16,8 +16,9 @@
           href="https://wa.me/56995605137"
           class="text-white text-decoration-none"
           target="_blank"
-          >WhatsApp</a
         >
+          WhatsApp
+        </a>
       </div>
 
       <div class="col-md-4 mb-3 mb-md-0 text-center">
@@ -48,8 +49,9 @@
           href="https://open.spotify.com/intl-es/artist/1m1mEMI4Yw5jr8aoguhgy8"
           target="_blank"
           class="btn btn-outline-light btn-sm"
-          >Spotify</a
         >
+          Spotify
+        </a>
       </div>
     </div>
 
@@ -61,11 +63,21 @@
 
 <!-- PLAYER fijo al fondo -->
 <div id="audio-player" class="player-bar">
+  <!-- INFO + BARRAS DE SONIDO -->
   <div class="player-info">
-    <span class="player-disco" id="player-disco">—</span>
-    <span class="player-titulo" id="player-titulo">Seleccioná un tema</span>
+    <div class="sound-bars">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="player-text">
+      <span class="player-disco" id="player-disco">—</span>
+      <span class="player-titulo" id="player-titulo">Seleccioná un tema</span>
+    </div>
   </div>
 
+  <!-- CONTROLES -->
   <div class="player-controls">
     <button class="player-btn" id="btn-prev" aria-label="Anterior">⏮</button>
     <button class="player-btn play-btn" id="btn-play" aria-label="Play/Pause">
@@ -75,6 +87,7 @@
     <button class="player-btn" id="btn-next" aria-label="Siguiente">⏭</button>
   </div>
 
+  <!-- VOLUMEN -->
   <div class="player-volume">
     <span class="vol-icon">🔈</span>
     <input

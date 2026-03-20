@@ -27,7 +27,7 @@ const DATA = {
       title: "Errantes",
       year: 2022,
       description: "",
-      image: "",
+      image: "/assets/img/discos/errantes.png",
       spotify: "https://open.spotify.com/album/ejemplo3",
       bandcamp: "https://ismarivera.bandcamp.com/album/errantes",
     },

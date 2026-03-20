@@ -8,12 +8,22 @@ const PLAYLIST = [
     {
         titulo: "A mí también me duele Chile",
         disco: "La última cena de los buitres",
-        src: "/assets/audio/A_mi_también_me_duele_Chile_Isma_Rivera.mp3"
+        src: "/assets/audio/A_mi_tambien_me_duele_Chile.mp3"
     },
     {
         titulo: "Constelación de los caídos",
         disco: "La última cena de los buitres",
-        src: "/assets/audio/Constelacion_de_los_caidos_Isma_rivera.mp3"
+        src: "/assets/audio/Constelacion_de_los_caidos.mp3"
+    },
+    {
+        titulo: "Letras en la llaga",
+        disco: "Desbautízame",
+        src: "/assets/audio/Errante_letras_en_la_llaga.mp3"
+    },
+    {
+        titulo: "Pelea de Perros",
+        disco: "La última cena de los buitres",
+        src: "/assets/audio/Pelea_de_perros.mp3"
     }
 ];
 

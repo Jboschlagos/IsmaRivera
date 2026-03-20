@@ -70,6 +70,12 @@ function bindLinks() {
 // ── Init ───────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("navbar-container", "/componentes/navbar.html");
+
+    // Reinicializar Bootstrap para el navbar dinámico
+    document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(el => {
+        new bootstrap.Collapse(el.getAttribute('data-bs-target'), { toggle: false });
+    });
+
     await loadComponent("footer-container", "/componentes/footer.html");
 
     // El player vive en footer, avisamos que está listo

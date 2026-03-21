@@ -3,6 +3,7 @@
 /* CONTENIDO */
 .poesia-content {
   padding-top: 90px;
+  padding-left: 1.5rem; /* agrega esta línea */
   min-height: 100vh;
   padding-bottom: 3rem;
 }

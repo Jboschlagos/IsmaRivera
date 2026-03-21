@@ -2,7 +2,7 @@
 
 /* HEADER */
 .section-header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-header h1 {
@@ -123,4 +123,595 @@
 
 .content {
   padding-top: 80px;
+}
+
+/* ============================================
+   VIDEOS — agregar al final de musica.css
+   ============================================ */
+
+/* SUBTÍTULO DE SECCIÓN */
+.section-subheader {
+  color: var(--ocre);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+/* THUMBNAIL CON ICONO DE PLAY */
+.video-thumb-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+  transition:
+    opacity var(--transicion),
+    transform var(--transicion);
+  aspect-ratio: unset;
+}
+
+.video-play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.video-play-icon svg {
+  width: 48px;
+  height: 48px;
+  color: var(--ocre);
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
+  transition:
+    transform var(--transicion),
+    opacity var(--transicion);
+}
+
+.video-card:hover .video-thumb-wrap img {
+  opacity: 0.55;
+  transform: scale(1.04);
+}
+
+.video-card:hover .video-play-icon svg {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+/* ETIQUETA VIDEO */
+.video-tag {
+  font-size: 0.75rem;
+  color: var(--ocre);
+  opacity: 0.6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* DESCRIPCIÓN CORTA */
+.video-short-desc {
+  font-size: 0.82rem;
+  opacity: 0.65;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================================
+   MODAL DE VIDEO
+   ============================================ */
+
+#video-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9500;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+#video-modal-overlay.active {
+  opacity: 1;
+}
+
+.video-modal {
+  position: relative;
+  background: #111;
+  border: 1px solid rgba(176, 125, 43, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 860px;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: translateY(16px);
+  transition: transform 0.3s ease;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(176, 125, 43, 0.3) transparent;
+}
+
+#video-modal-overlay.active .video-modal {
+  transform: translateY(0);
+}
+
+/* BOTÓN CERRAR */
+.video-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.85rem;
+  background: none;
+  border: none;
+  color: var(--blanco);
+  opacity: 0.4;
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition:
+    opacity var(--transicion),
+    color var(--transicion);
+  z-index: 10;
+}
+
+.video-modal-close:hover {
+  opacity: 1;
+  color: var(--ocre);
+}
+
+/* IFRAME */
+.video-modal-player {
+  width: 100%;
+}
+
+.video-iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+}
+
+.video-iframe-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* INFO */
+.video-modal-info {
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.video-modal-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.video-modal-title {
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: var(--ocre);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.video-modal-year {
+  font-size: 0.78rem;
+  color: var(--blanco);
+  opacity: 0.35;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.video-modal-shortdesc {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.video-modal-longdesc {
+  font-size: 0.88rem;
+  opacity: 0.6;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(176, 125, 43, 0.3);
+}
+
+/* CRÉDITOS */
+.video-modal-credits {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 0.75rem;
+}
+
+.video-modal-credits summary {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ocre);
+  opacity: 0.6;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity var(--transicion);
+  outline: none;
+}
+
+.video-modal-credits summary:hover {
+  opacity: 1;
+}
+
+.video-modal-credits[open] summary {
+  opacity: 1;
+  margin-bottom: 0.75rem;
+}
+
+.video-modal-credits table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.video-modal-credits tr + tr td {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.video-credit-rol {
+  font-size: 0.75rem;
+  color: var(--ocre);
+  opacity: 0.65;
+  padding: 0.4rem 1rem 0.4rem 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.video-credit-nombre {
+  font-size: 0.82rem;
+  opacity: 0.7;
+  padding: 0.4rem 0;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .video-modal-info {
+    padding: 1.25rem;
+  }
+
+  .video-modal-title {
+    font-size: 1.1rem;
+  }
+
+  .video-credit-rol {
+    display: block;
+    white-space: normal;
+    padding-bottom: 0;
+  }
+
+  .video-credit-nombre {
+    display: block;
+    padding-top: 0.1rem;
+    padding-bottom: 0.6rem;
+    border-top: none !important;
+  }
+
+  .video-modal-credits table,
+  .video-modal-credits tbody,
+  .video-modal-credits tr,
+  .video-modal-credits td {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ============================================
+   MODAL DE DISCO — agregar al final de musica.css
+   ============================================ */
+
+/* BOTÓN TRACKLIST en la card */
+.album-btn-tracklist {
+  background: none;
+  border: 1px solid rgba(176, 125, 43, 0.35);
+  color: var(--ocre);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition:
+    background var(--transicion),
+    color var(--transicion);
+}
+
+.album-btn-tracklist:hover {
+  background: rgba(176, 125, 43, 0.12);
+  color: var(--ocre);
+}
+
+/* OVERLAY */
+#album-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9500;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+#album-modal-overlay.active {
+  opacity: 1;
+}
+
+/* MODAL */
+.album-modal {
+  position: relative;
+  background: #111;
+  border: 1px solid rgba(176, 125, 43, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: translateY(16px);
+  transition: transform 0.3s ease;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(176, 125, 43, 0.3) transparent;
+}
+
+#album-modal-overlay.active .album-modal {
+  transform: translateY(0);
+}
+
+/* BOTÓN CERRAR */
+.album-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.85rem;
+  background: none;
+  border: none;
+  color: var(--blanco);
+  opacity: 0.4;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition:
+    opacity var(--transicion),
+    color var(--transicion);
+  z-index: 10;
+}
+
+.album-modal-close:hover {
+  opacity: 1;
+  color: var(--ocre);
+}
+
+/* HEADER: portada + meta */
+.album-modal-header {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
+  padding: 1.75rem 1.75rem 1.25rem;
+  align-items: start;
+}
+
+.album-modal-cover img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.album-modal-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--ocre);
+  letter-spacing: 0.05em;
+  margin: 0 0 0.25rem;
+}
+
+.album-modal-year {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--blanco);
+  opacity: 0.35;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.album-modal-resena {
+  font-size: 0.88rem;
+  opacity: 0.7;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.album-modal-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.album-modal-link {
+  font-size: 0.78rem;
+  color: var(--blanco);
+  opacity: 0.5;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition:
+    opacity var(--transicion),
+    color var(--transicion);
+}
+
+.album-modal-link:hover {
+  opacity: 1;
+  color: var(--ocre);
+}
+
+/* TRACKLIST */
+.album-modal-tracklist {
+  padding: 0 1.75rem 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tracklist-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ocre);
+  opacity: 0.55;
+  margin: 1.25rem 0 0.75rem;
+  font-weight: 400;
+}
+
+.tracklist-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* FILA DE TRACK */
+.track-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.track-item:last-child {
+  border-bottom: none;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr auto auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+}
+
+.track-numero {
+  font-size: 0.75rem;
+  opacity: 0.3;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.track-titulo {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.track-duracion {
+  font-size: 0.75rem;
+  opacity: 0.35;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* BOTÓN LETRA */
+.track-btn-letra {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--blanco);
+  opacity: 0.45;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition:
+    opacity var(--transicion),
+    border-color var(--transicion),
+    color var(--transicion);
+  white-space: nowrap;
+}
+
+.track-btn-letra:hover {
+  opacity: 1;
+  border-color: rgba(176, 125, 43, 0.4);
+  color: var(--ocre);
+}
+
+.track-btn-letra.active {
+  opacity: 1;
+  border-color: var(--ocre);
+  color: var(--ocre);
+}
+
+.track-btn-letra--disabled {
+  opacity: 0.15;
+  cursor: default;
+  border-color: transparent;
+}
+
+/* BLOQUE DE LETRA */
+.track-letra {
+  font-size: 0.85rem;
+  line-height: 1.85;
+  opacity: 0.7;
+  padding: 0.75rem 0 1rem 2.25rem;
+  font-style: italic;
+  color: var(--blanco);
+}
+
+.track-letra span {
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .album-modal-header {
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
+  .album-modal-tracklist {
+    padding: 0 1.25rem 1.25rem;
+  }
+
+  .track-row {
+    grid-template-columns: 1.25rem 1fr auto auto;
+    gap: 0.5rem;
+  }
+
+  .track-titulo {
+    font-size: 0.85rem;
+  }
+}
+
+.content > .back-btn {
+  padding-top: 1.5rem;
+  display: block;
 }

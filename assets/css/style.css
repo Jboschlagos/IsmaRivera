@@ -19,7 +19,7 @@ html {
   --negro-suave: #111111;
   --blanco: #f2f2f2;
   --ocre: #b07d2b;
-  --azul: #03204c;
+  --azul: #28436a;
   --transicion: 0.3s ease;
 }
 
@@ -206,7 +206,7 @@ body {
 ========================= */
 .back-btn {
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--blanco);
   opacity: 0.5;
   text-decoration: none;

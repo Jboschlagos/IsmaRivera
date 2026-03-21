@@ -11,6 +11,7 @@
  * - Precarga de fragmentos al hacer hover en los links
  */
 
+// Títulos dinámicos por página
 const PAGE_TITLES = {
     home: "Isma Rivera | Poeta Cantor",
     musica: "Música | Isma Rivera",
@@ -37,7 +38,7 @@ async function loadPage(page) {
     const contenido = document.getElementById("contenido");
     if (!contenido) return;
 
-    // Actualizar título de la pestaña
+    // Actualizar título de la pestaña según la página
     document.title = PAGE_TITLES[page] || "Isma Rivera | Poeta Cantor";
 
     try {
@@ -54,7 +55,10 @@ async function loadPage(page) {
         });
 
         // Re-ejecutar JS de la página si corresponde
-        if (page === "musica" && typeof renderAlbums === "function") renderAlbums();
+        if (page === "musica") {
+            if (typeof renderAlbums === "function") renderAlbums();
+            if (typeof renderVideos === "function") renderVideos();
+        }
         if (page === "poesia" && typeof renderBooks === "function") renderBooks();
 
         // Registrar clicks de la nueva página
@@ -91,6 +95,7 @@ function bindLinks() {
 }
 
 // ── Inicializar menú hamburguesa manualmente ───────────────────
+// Bootstrap Collapse no funciona bien con navbar cargado dinámicamente
 function initHamburger() {
     const toggler = document.querySelector('.navbar-toggler');
     const menu = document.querySelector('#navbarMenu');
@@ -105,15 +110,19 @@ function initHamburger() {
 document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("navbar-container", "/componentes/navbar.html");
 
+    // Inicializar hamburguesa después de cargar el navbar
     initHamburger();
 
     await loadComponent("footer-container", "/componentes/footer.html");
 
+    // El player vive en el footer — avisamos que está listo
     document.dispatchEvent(new CustomEvent("playerReady"));
 
+    // Cargar página inicial según hash o home por defecto
     const page = location.hash.replace("#", "") || "home";
     await loadPage(page);
 
+    // Registrar links del navbar
     bindLinks();
 });
 

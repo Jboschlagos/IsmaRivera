@@ -12,7 +12,7 @@ const PLAYLIST = [
     },
     {
         titulo: "Constelación de los caídos",
-        disco: "La última cena de los buitres",
+        disco: "",
         src: "/assets/audio/Constelacion_de_los_caidos.mp3"
     },
     {

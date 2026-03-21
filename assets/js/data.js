@@ -43,19 +43,19 @@ const DATA = {
     },
     {
       title: "Tizne",
-      year: 2017,
+      year: 2019,
       type: "Poesía",
       image: "./assets/img/libros/tizne.png",
     },
     {
       title: "Rincones",
-      year: 2018,
+      year: 2010,
       type: "Poesía",
       image: "./assets/img/libros/rincones.png",
     },
     {
       title: "Colonia Penal",
-      year: 2021,
+      year: 2023,
       type: "Poesía",
       image: "./assets/img/libros/coloniapenal.png",
     },

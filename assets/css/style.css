@@ -47,14 +47,14 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   backdrop-filter: blur(10px);
-  background-color: rgba(80, 80, 80, 0.95) !important;
+  background-color: rgba(11, 11, 11, 0.95) !important;
   border-bottom: 1px solid rgba(176, 125, 43, 0.15);
 }
 
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
-  color: rgba(0, 0, 0, 0.85) !important;
+  color: var(--blanco) !important;
 }
 
 .navbar-brand img {
@@ -66,7 +66,7 @@ body {
   font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.85) !important;
+  color: var(--blanco) !important;
   transition: color var(--transicion);
   position: relative;
 }
@@ -100,10 +100,9 @@ body {
   .navbar-collapse {
     display: none;
     width: 100%;
-    background-color: rgba(80, 80, 80, 0.98);
+    background-color: rgba(11, 11, 11, 0.98);
     padding: 1rem;
   }
-
   .navbar-collapse.show {
     display: block;
   }

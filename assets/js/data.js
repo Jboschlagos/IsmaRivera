@@ -368,7 +368,11 @@ y quede lo que soy tras lo que borraron.`,
       poemas: [
         {
           titulo: "Poema placeholder 1",
-          texto: `“A veces me siento\ una araña colgando \ de un único hilo \ en el viento aferrado \ para no caer \ otra vez \ en la tristeza.”`
+          texto: `“A veces me siento 
+          una araña colgando  de un único hilo 
+          en el viento aferrado 
+          para no caer otra vez 
+          en la tristeza.”`
         },
         {
           titulo: "Poema placeholder 2",

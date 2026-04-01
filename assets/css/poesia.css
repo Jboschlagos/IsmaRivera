@@ -101,3 +101,154 @@
     font-size: 2rem;
   }
 }
+
+/* OVERLAY */
+#book-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+#book-modal-overlay.active {
+  opacity: 1;
+}
+
+/* MODAL */
+.poesia-modal {
+  width: 90%;
+  max-width: 1100px;
+  height: 85vh;
+  background: #0e0e0e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* BOTÓN CERRAR */
+.poesia-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.poesia-modal-close:hover {
+  opacity: 1;
+}
+
+/* GRID */
+.poesia-modal-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  height: 100%;
+}
+
+/* SIDEBAR */
+.poesia-sidebar {
+  padding: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  overflow-y: auto;
+}
+
+.poesia-sidebar img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.poesia-sidebar h2 {
+  font-size: 1.1rem;
+  color: var(--ocre);
+  margin-bottom: 0.2rem;
+}
+
+.poesia-sidebar span {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.poesia-resena {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin: 1rem 0;
+}
+
+.poesia-sidebar a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--ocre);
+}
+
+/* LISTA */
+.poesia-lista {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.poema-item {
+  padding: 0.4rem 0;
+  cursor: pointer;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.poema-item:hover,
+.poema-item.active {
+  opacity: 1;
+}
+
+/* VISOR */
+.poesia-viewer {
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poema-placeholder {
+  opacity: 0.4;
+}
+
+/* TEXTO POEMA */
+.poema-titulo {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: var(--ocre);
+}
+
+.poema-texto {
+  max-width: 600px;
+  line-height: 1.8;
+  font-family: serif;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .poesia-modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poesia-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}

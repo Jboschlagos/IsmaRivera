@@ -327,12 +327,12 @@ y quede lo que soy tras lo que borraron.`,
       year: 2015,
       type: "Poesía",
       image: "./assets/img/libros/desbautizamelibro.png",
-      resena: "Placeholder reseña de Desbautízame. Un libro que explora la identidad, el nombre y la herencia cultural a través de la palabra poética.",
+      resena: "El poemario plantea un gesto de ruptura: enfrentarse a Dios desde la igualdad, no desde la sumisión. Desbautizarse es afirmar libertad sin poder desprenderse del pasado. La experiencia deja de ser individual y se vuelve generacional, marcada por la tensión permanente entre lo humano y lo divino. Por Luis Aránguiz",
       comprar: "",
       poemas: [
         {
           titulo: "Poema placeholder 1",
-          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+          texto: `“¿Quién diseña el dolor de otro cuerpo?\ ¿Quién sabe dónde duele la palabra?”`
         },
         {
           titulo: "Poema placeholder 2",
@@ -345,7 +345,7 @@ y quede lo que soy tras lo que borraron.`,
       year: 2017,
       type: "Poesía",
       image: "./assets/img/libros/tizne.png",
-      resena: "Placeholder reseña de Tizne. Una obra que trabaja la memoria, el fuego y la huella que dejan las cosas que se queman.",
+      resena: "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
       comprar: "",
       poemas: [
         {
@@ -363,12 +363,12 @@ y quede lo que soy tras lo que borraron.`,
       year: 2018,
       type: "Poesía",
       image: "./assets/img/libros/rincones.png",
-      resena: "Placeholder reseña de Rincones. Una exploración de los espacios íntimos y los márgenes donde habita la experiencia cotidiana.",
+      resena: "El prólogo construye una metáfora donde la araña representa una lucha contra el tiempo y la muerte. Su tejido no es solo supervivencia, sino estrategia: un intento constante por retrasar el final. El libro se instala así en una tensión entre lo inevitable y su postergación. Por Rafael Rubio",
       comprar: "",
       poemas: [
         {
           titulo: "Poema placeholder 1",
-          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+          texto: `“A veces me siento\ una araña colgando \ de un único hilo \ en el viento aferrado \ para no caer \ otra vez \ en la tristeza.”`
         },
         {
           titulo: "Poema placeholder 2",
@@ -381,7 +381,7 @@ y quede lo que soy tras lo que borraron.`,
       year: 2021,
       type: "Poesía",
       image: "./assets/img/libros/coloniapenal.png",
-      resena: "Placeholder reseña de Colonia Penal. Un poemario sobre el confinamiento, la memoria y las marcas que deja la reclusión en parajes extremos.",
+      resena: "PEl libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
       comprar: "",
       poemas: [
         {

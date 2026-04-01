@@ -64,11 +64,13 @@ body {
 
 .nav-link {
   font-size: 1rem;
+  font-weight: 300;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--blanco) !important;
   transition: color var(--transicion);
   position: relative;
+  text-shadow: none;
 }
 
 .nav-link:hover,

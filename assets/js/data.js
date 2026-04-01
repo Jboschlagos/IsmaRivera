@@ -327,24 +327,72 @@ y quede lo que soy tras lo que borraron.`,
       year: 2015,
       type: "Poesía",
       image: "./assets/img/libros/desbautizamelibro.png",
+      resena: "Placeholder reseña de Desbautízame. Un libro que explora la identidad, el nombre y la herencia cultural a través de la palabra poética.",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Poema placeholder 1",
+          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+        },
+        {
+          titulo: "Poema placeholder 2",
+          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
+        }
+      ]
     },
     {
       title: "Tizne",
       year: 2017,
       type: "Poesía",
       image: "./assets/img/libros/tizne.png",
+      resena: "Placeholder reseña de Tizne. Una obra que trabaja la memoria, el fuego y la huella que dejan las cosas que se queman.",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Poema placeholder 1",
+          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+        },
+        {
+          titulo: "Poema placeholder 2",
+          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
+        }
+      ]
     },
     {
       title: "Rincones",
       year: 2018,
       type: "Poesía",
       image: "./assets/img/libros/rincones.png",
+      resena: "Placeholder reseña de Rincones. Una exploración de los espacios íntimos y los márgenes donde habita la experiencia cotidiana.",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Poema placeholder 1",
+          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+        },
+        {
+          titulo: "Poema placeholder 2",
+          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
+        }
+      ]
     },
     {
       title: "Colonia Penal",
       year: 2021,
       type: "Poesía",
       image: "./assets/img/libros/coloniapenal.png",
+      resena: "Placeholder reseña de Colonia Penal. Un poemario sobre el confinamiento, la memoria y las marcas que deja la reclusión en parajes extremos.",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Poema placeholder 1",
+          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+        },
+        {
+          titulo: "Poema placeholder 2",
+          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
+        }
+      ]
     },
   ],
 

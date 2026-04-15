@@ -47,7 +47,7 @@
         </p>
       </div>
 
-      <a
+      
         href="/assets/docs/dossier.Isma.Rivera.2026.pdf"
         target="_blank"
         class="dossier-link"
@@ -56,10 +56,35 @@
       </a>
     </div>
 
+    <!-- CARRUSEL -->
     <div class="col-12 col-md-5">
-      <figure class="bio-foto">
-        <img src="/assets/img/bio.jpg" alt="Isma Rivera" />
-      </figure>
+      <div class="bio-carrusel" id="bio-carrusel">
+        <div class="bio-carrusel-track" id="bio-carrusel-track">
+          <figure class="bio-carrusel-slide">
+            <img src="/assets/img/bio.jpg" alt="Isma Rivera" />
+          </figure>
+          <figure class="bio-carrusel-slide">
+            <img src="/assets/img/bio2.jpg" alt="Isma Rivera" />
+          </figure>
+          <figure class="bio-carrusel-slide">
+            <img src="/assets/img/bio3.jpg" alt="Isma Rivera" />
+          </figure>
+          <figure class="bio-carrusel-slide">
+            <img src="/assets/img/bio4.jpg" alt="Isma Rivera" />
+          </figure>
+        </div>
+
+        <!-- Flechas -->
+        <button class="bio-carrusel-btn bio-carrusel-btn--prev" id="bio-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <button class="bio-carrusel-btn bio-carrusel-btn--next" id="bio-next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+
+        <!-- Dots -->
+        <div class="bio-carrusel-dots" id="bio-dots"></div>
+      </div>
     </div>
   </div>
 </main>

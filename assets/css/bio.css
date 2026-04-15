@@ -76,3 +76,108 @@
     margin-bottom: 2rem;
   }
 }
+
+/* CARRUSEL */
+.bio-carrusel {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bio-carrusel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.bio-carrusel-slide {
+  min-width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bio-carrusel-slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: filter var(--transicion);
+  aspect-ratio: 3 / 4;
+}
+
+.bio-carrusel:hover .bio-carrusel-slide img {
+  filter: grayscale(0%);
+}
+
+/* FLECHAS */
+.bio-carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(11, 11, 11, 0.6);
+  border: 1px solid rgba(176, 125, 43, 0.3);
+  color: var(--blanco);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity var(--transicion),
+    background var(--transicion);
+  z-index: 10;
+  padding: 0;
+}
+
+.bio-carrusel-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.bio-carrusel:hover .bio-carrusel-btn {
+  opacity: 1;
+}
+
+.bio-carrusel-btn:hover {
+  background: rgba(176, 125, 43, 0.25);
+  color: var(--ocre);
+}
+
+.bio-carrusel-btn--prev {
+  left: 0.6rem;
+}
+.bio-carrusel-btn--next {
+  right: 0.6rem;
+}
+
+/* DOTS */
+.bio-carrusel-dots {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.bio-carrusel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(242, 242, 242, 0.35);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    background var(--transicion),
+    transform var(--transicion);
+}
+
+.bio-carrusel-dot.active {
+  background: var(--ocre);
+  transform: scale(1.3);
+}

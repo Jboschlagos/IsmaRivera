@@ -73,34 +73,62 @@ async function loadPage(page) {
 function initBioCarrusel() {
   const track = document.getElementById("bio-carrusel-track");
   const dotsContainer = document.getElementById("bio-dots");
-  console.log("track:", track); // ¿es null?
-  console.log("dots:", dotsContainer); // ¿es null?
   if (!track || !dotsContainer) return;
 
   // Limpiar estado previo
   dotsContainer.innerHTML = "";
-  track.style.transform = "translateX(0%)";
+  track.style.transition = "none";
 
-  const slides = track.querySelectorAll(".bio-carrusel-slide");
-  const total = slides.length;
-  let actual = 0;
+  const slidesOriginales = Array.from(
+    track.querySelectorAll(".bio-carrusel-slide"),
+  );
+  const total = slidesOriginales.length;
 
-  // Crear dots
-  slides.forEach((_, i) => {
+  // Clonar primero y último para loop infinito
+  const primerClon = slidesOriginales[0].cloneNode(true);
+  const ultimoClon = slidesOriginales[total - 1].cloneNode(true);
+  track.appendChild(primerClon);
+  track.insertBefore(ultimoClon, slidesOriginales[0]);
+
+  // Track queda: [clon-último | orig1 | orig2 | ... | origN | clon-primero]
+  let actual = 1;
+  track.style.transform = `translateX(-${actual * 100}%)`;
+
+  // Crear dots solo para originales
+  slidesOriginales.forEach((_, i) => {
     const dot = document.createElement("button");
     dot.className = "bio-carrusel-dot" + (i === 0 ? " active" : "");
     dot.setAttribute("aria-label", `Imagen ${i + 1}`);
-    dot.addEventListener("click", () => ir(i));
+    dot.addEventListener("click", () => ir(i + 1));
     dotsContainer.appendChild(dot);
   });
 
-  function ir(i) {
-    actual = (i + total) % total;
-    track.style.transform = `translateX(-${actual * 100}%)`;
-    dotsContainer.querySelectorAll(".bio-carrusel-dot").forEach((d, idx) => {
-      d.classList.toggle("active", idx === actual);
+  function actualizarDots() {
+    dotsContainer.querySelectorAll(".bio-carrusel-dot").forEach((d, i) => {
+      d.classList.toggle("active", i === actual - 1);
     });
   }
+
+  function ir(i) {
+    actual = i;
+    track.style.transition = "transform 0.45s ease";
+    track.style.transform = `translateX(-${actual * 100}%)`;
+    actualizarDots();
+  }
+
+  // Salto silencioso al terminar la transición
+  track.addEventListener("transitionend", () => {
+    if (actual === total + 1) {
+      track.style.transition = "none";
+      actual = 1;
+      track.style.transform = `translateX(-${actual * 100}%)`;
+    }
+    if (actual === 0) {
+      track.style.transition = "none";
+      actual = total;
+      track.style.transform = `translateX(-${actual * 100}%)`;
+    }
+  });
 
   // Reemplazar botones para eliminar listeners duplicados
   const prevBtn = document.getElementById("bio-prev");

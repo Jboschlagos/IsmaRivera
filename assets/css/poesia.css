@@ -122,8 +122,8 @@
 
 /* MODAL */
 .poesia-modal {
-  width: 90%;
-  max-width: 1100px;
+  width: 80%; /* era 90% */
+  max-width: 820px; /* era 1100px */
   height: 85vh;
   background: #0e0e0e;
   border-radius: 10px;
@@ -153,7 +153,7 @@
 /* GRID */
 .poesia-modal-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 240px 1fr; /* era 280px */
   height: 100%;
 }
 
@@ -220,7 +220,8 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  max-width: 400px; /* ← agrega esto */
 }
 
 .poema-placeholder {
@@ -235,10 +236,11 @@
 }
 
 .poema-texto {
-  max-width: 600px;
+  max-width: 480px; /* ajusta este valor a tu gusto */
   line-height: 1.8;
   font-family: serif;
   font-size: 0.95rem;
+  white-space: pre-wrap;
 }
 
 /* RESPONSIVE */
@@ -251,4 +253,26 @@
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
+}
+
+/* Scrollbar personalizada */
+.poesia-viewer::-webkit-scrollbar,
+.poesia-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.poesia-viewer::-webkit-scrollbar-track,
+.poesia-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.poesia-viewer::-webkit-scrollbar-thumb,
+.poesia-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(176, 125, 43, 0.3); /* ocre suave */
+  border-radius: 2px;
+}
+
+.poesia-viewer::-webkit-scrollbar-thumb:hover,
+.poesia-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(176, 125, 43, 0.7);
 }

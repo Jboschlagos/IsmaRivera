@@ -4,7 +4,6 @@
  */
 
 const DATA = {
-
   // ── DISCOS ────────────────────────────────────────────────
   albums: [
     {
@@ -12,9 +11,11 @@ const DATA = {
       year: 2019,
       description: "Primer disco solista de Isma Rivera.",
       image: "./assets/img/discos/ultimacena.png",
-      spotify: "https://open.spotify.com/intl-es/album/6CtCJ71uUcKSs59ZmALo08?si=vQ_4hc5oQPex5WhYBRHzwQ",
+      spotify:
+        "https://open.spotify.com/intl-es/album/6CtCJ71uUcKSs59ZmALo08?si=vQ_4hc5oQPex5WhYBRHzwQ",
       bandcamp: "selloprecario.bandcamp.com/album/la-ltima-cena-de-los-buitres",
-      resena: "Primer disco solista de Isma Rivera. Una propuesta que combina escritura, voz y experimentación sonora, cruzando el punk con la tradición folclórica latinoamericana.",
+      resena:
+        "Primer disco solista de Isma Rivera. Una propuesta que combina escritura, voz y experimentación sonora, cruzando el punk con la tradición folclórica latinoamericana.",
       tracklist: [
         {
           numero: 1,
@@ -211,8 +212,8 @@ con lo propio más profundo.`,
     },
     {
       title: "Errantes",
-      year: 2022,
-      description: "",
+      year: 2015,
+      description: "Desbautízame",
       image: "/assets/img/discos/errantes.png",
       spotify: "https://open.spotify.com/album/ejemplo3",
       bandcamp: "https://selloprecario.bandcamp.com/album/desbaut-zame",
@@ -261,22 +262,42 @@ y quede lo que soy tras lo que borraron.`,
       youtubeId: "K0JE1jFJG4w",
       title: "La última cena de los buitres",
       year: 2019,
-      shortDesc: "Video oficial inspirado en la canción que abre el disco homónimo de Isma Rivera. Colección «Videos Precarios». Sello Precario 2019.",
-      longDesc: "Sobre un escenario sórdido comen y beben personajes paganos de todos los tiempos. Un ojo agudo observa atento y distante el momento. Lo registra en su retina como un álbum de fotos que devela poco a poco un secreto.",
+      shortDesc:
+        "Video oficial inspirado en la canción que abre el disco homónimo de Isma Rivera. Colección «Videos Precarios». Sello Precario 2019.",
+      longDesc:
+        "Sobre un escenario sórdido comen y beben personajes paganos de todos los tiempos. Un ojo agudo observa atento y distante el momento. Lo registra en su retina como un álbum de fotos que devela poco a poco un secreto.",
       credits: [
-        { rol: "Realización", nombre: "Daniel Jesús Díaz — «La Pieza Oscura», estudio andante. Marzo 2019, entre Ñuñoa, Santiago y Copiapó, Atacama, Chile." },
+        {
+          rol: "Realización",
+          nombre:
+            "Daniel Jesús Díaz — «La Pieza Oscura», estudio andante. Marzo 2019, entre Ñuñoa, Santiago y Copiapó, Atacama, Chile.",
+        },
         { rol: "Autor e interpretación", nombre: "Ismael Rivera L." },
-        { rol: "Compositores", nombre: "Paloma Soto, Cristián «Gato» Olea e Ismael Rivera" },
-        { rol: "Guitarra eléctrica", nombre: "Cristián «Gato» Olea — arreglos e interpretación" },
-        { rol: "Bajo, guitarra rítmica, base y teclado", nombre: "Daniel Jesús Díaz — arreglos e interpretación" },
-        { rol: "Producción, grabación, mezcla y masterización", nombre: "Daniel Jesús Díaz — «La Pieza Oscura», estudio andante. San Miguel, Copiapó y Bahía Inglesa, Chile." },
+        {
+          rol: "Compositores",
+          nombre: "Paloma Soto, Cristián «Gato» Olea e Ismael Rivera",
+        },
+        {
+          rol: "Guitarra eléctrica",
+          nombre: "Cristián «Gato» Olea — arreglos e interpretación",
+        },
+        {
+          rol: "Bajo, guitarra rítmica, base y teclado",
+          nombre: "Daniel Jesús Díaz — arreglos e interpretación",
+        },
+        {
+          rol: "Producción, grabación, mezcla y masterización",
+          nombre:
+            "Daniel Jesús Díaz — «La Pieza Oscura», estudio andante. San Miguel, Copiapó y Bahía Inglesa, Chile.",
+        },
       ],
     },
     {
       youtubeId: "G89Pbwi0TlE",
       title: "A mí también me duele Chile",
       year: 2019,
-      shortDesc: "Video oficial inspirado en el 2do sencillo del disco «La última cena de los buitres» de Isma Rivera. Colección «Videos Precarios». Sello Precario 2019.",
+      shortDesc:
+        "Video oficial inspirado en el 2do sencillo del disco «La última cena de los buitres» de Isma Rivera. Colección «Videos Precarios». Sello Precario 2019.",
       longDesc: "",
       credits: [
         { rol: "Dirección y cámara", nombre: "Maritza Farías Cerpa" },
@@ -284,18 +305,25 @@ y quede lo que soy tras lo que borraron.`,
         { rol: "Fotografía", nombre: "Carla Motto Tejada" },
         { rol: "Protagonista", nombre: "Mónica Ríos Contreras" },
         { rol: "Letra y arreglos de voz", nombre: "Ismael Rivera L." },
-        { rol: "Composición, arreglos, interpretación, grabación y producción", nombre: "Daniel Jesús Díaz — «La pieza oscura», estudio andante" },
+        {
+          rol: "Composición, arreglos, interpretación, grabación y producción",
+          nombre: "Daniel Jesús Díaz — «La pieza oscura», estudio andante",
+        },
       ],
     },
     {
       youtubeId: "Od2zkAa2_q4",
       title: "Pelea de perros",
       year: 2020,
-      shortDesc: "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
+      shortDesc:
+        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
       longDesc: "",
       credits: [
         { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
-        { rol: "Realizadores", nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C." },
+        {
+          rol: "Realizadores",
+          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
+        },
         { rol: "Música", nombre: "Daniel Jesús Díaz" },
         { rol: "Poesía y voz", nombre: "Isma Rivera" },
         { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
@@ -306,7 +334,8 @@ y quede lo que soy tras lo que borraron.`,
       youtubeId: "uJBwLT5c1RE",
       title: "Canción del simple",
       year: 2019,
-      shortDesc: "Video oficial inspirado en el 4to sencillo del disco «La última cena de los buitres» de Isma Rivera. Canción original del trovador cubano Freddy Laffita. Sello Precario, 2019.",
+      shortDesc:
+        "Video oficial inspirado en el 4to sencillo del disco «La última cena de los buitres» de Isma Rivera. Canción original del trovador cubano Freddy Laffita. Sello Precario, 2019.",
       longDesc: "",
       credits: [
         { rol: "Dirección y cámara", nombre: "Maritza Farías Cerpa" },
@@ -315,7 +344,10 @@ y quede lo que soy tras lo que borraron.`,
         { rol: "Protagonista", nombre: "Carolina Jullian Suárez" },
         { rol: "Composición y letra", nombre: "Freddy Laffita" },
         { rol: "Voz", nombre: "Ismael Rivera L." },
-        { rol: "Arreglos, interpretación, grabación y producción", nombre: "Ramírez Neira — «La pieza oscura», estudio andante" },
+        {
+          rol: "Arreglos, interpretación, grabación y producción",
+          nombre: "Ramírez Neira — «La pieza oscura», estudio andante",
+        },
       ],
     },
   ],
@@ -327,76 +359,184 @@ y quede lo que soy tras lo que borraron.`,
       year: 2015,
       type: "Poesía",
       image: "./assets/img/libros/desbautizamelibro.png",
-      resena: "El poemario plantea un gesto de ruptura: enfrentarse a Dios desde la igualdad, no desde la sumisión. Desbautizarse es afirmar libertad sin poder desprenderse del pasado. La experiencia deja de ser individual y se vuelve generacional, marcada por la tensión permanente entre lo humano y lo divino. Por Luis Aránguiz",
+      resena:
+        "El poemario plantea un gesto de ruptura: enfrentarse a Dios desde la igualdad, no desde la sumisión. Desbautizarse es afirmar libertad sin poder desprenderse del pasado. La experiencia deja de ser individual y se vuelve generacional, marcada por la tensión permanente entre lo humano y lo divino. Por Luis Aránguiz",
       comprar: "",
       poemas: [
         {
-          titulo: "Poema placeholder 1",
-          texto: `“¿Quién diseña el dolor de otro cuerpo?\ ¿Quién sabe dónde duele la palabra?”`
+          titulo: "Letras en la llaga",
+          texto: `Do you have enough bone-broken limbs to cover the sun?
+          Hand me over your dead and give me the list of their names
+          in one thousand two hundred word limit.
+          Today, my body was a TV d massacre that had to fit into sound-bites
+          and word limits and moves those that are desensitized to terrorist blood.
+          (Rafeef Ziadah)
+          Mi nombre está marcado por el fuego
+          de doce tribus como doce semillas
+          quemadas por el fósforo blanco
+          Mi nombre está marcado por la guerra
+          el odio al padre, el desprecio del hijo
+          la lucha de clanes
+          con manos de sangre.
+          
+          Mi nombre está marcado por el huacho
+          aquel forzado a partir lejos
+          el abandonado en la orilla contraria
+          frente a la arena cristiana.
+          
+          Mi nombre está marcado por la tierra
+          del gitano sediento de vida
+          niño bastardo expuesto a filo de cuchillo.
+          
+          ¡Agar madre esclava!
+          No pudieron con tu fuerza
+          nada consiguieron con el destierro
+          de una madre y su hijo
+          de la estrella nación.
+        tigres fuimos
+        somos tigres
+        habitamos el desierto.`,
         },
         {
-          titulo: "Poema placeholder 2",
-          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
-        }
-      ]
+          titulo: "Desbautízame",
+          texto: `Me niegas la caída al pozo
+          a manos de este yo cansado
+          aun cuando es claro que es tarde
+          que como resonaron las palabras de otro
+          no merece la pena matarse, siempre
+          lo hace uno demasiado tarde.
+          
+          carnada entre buitres hambrientos.
+          
+          Se entregó su cuerpo al látigo
+          con la docilidad del clavo
+          o del suicidio implacable:
+          la espina.
+          Lo asististe —hipócrita de hipócritas—
+          en su frente. No me digas
+          que ese pobre es tu hijo.
+          
+          Y entre adorar y orar te dieron oro.
+          
+          Cruzaste la vereda sobre la cruz de tu hijo
+          condenas el autosacrificio
+          te sentaste a la mesa de los llenos
+          engulliste manjares
+          
+          manchados de sangre salada, las costras
+          de los que no aceptamos cruzar
+          de los que damos el pellejo cuando cruje
+          serán astillas en sus tráqueas.
+          
+          Han parido en un lugar del Edén
+          el génesis de este rojo apocalipsis.
+          
+          Nada más podrá nacer de la tierra que el polvo
+          tu regalo fue el frío y el olvido
+          la piedra que no suda ni llora
+          la mancha en la sotana, la culpa
+          Pero arrojaste a tu hijo a cargarla
+          del vacío ante el plato de comida.`,
+        },
+      ],
     },
     {
       title: "Tizne",
-      year: 2017,
+      year: 2019,
       type: "Poesía",
       image: "./assets/img/libros/tizne.png",
-      resena: "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
+      resena:
+        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
       comprar: "",
       poemas: [
         {
-          titulo: "Poema placeholder 1",
-          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+          titulo: "Sin titulo",
+          texto: `Sin importar cuán grande
+          sea la bandera
+          jamás podrá cubrir
+          su propio charco
+          de sangre.`,
         },
         {
-          titulo: "Poema placeholder 2",
-          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
-        }
-      ]
+          titulo: "Sin titulo",
+          texto: `¿Se puede hacer una fiesta escondiendo
+          a los muertos bajo la alfombra?
+          Pregunta el desdentado
+          Con los rieles en los pies.`,
+        },
+      ],
     },
     {
       title: "Rincones",
-      year: 2018,
+      year: 2010,
       type: "Poesía",
       image: "./assets/img/libros/rincones.png",
-      resena: "El prólogo construye una metáfora donde la araña representa una lucha contra el tiempo y la muerte. Su tejido no es solo supervivencia, sino estrategia: un intento constante por retrasar el final. El libro se instala así en una tensión entre lo inevitable y su postergación. Por Rafael Rubio",
+      resena:
+        "El prólogo construye una metáfora donde la araña representa una lucha contra el tiempo y la muerte. Su tejido no es solo supervivencia, sino estrategia: un intento constante por retrasar el final. El libro se instala así en una tensión entre lo inevitable y su postergación. Por Rafael Rubio",
       comprar: "",
       poemas: [
         {
-          titulo: "Poema placeholder 1",
+          titulo: "Sin Titulo",
           texto: `“A veces me siento 
           una araña colgando  de un único hilo 
           en el viento aferrado 
           para no caer otra vez 
-          en la tristeza.”`
+          en la tristeza.”`,
         },
         {
-          titulo: "Poema placeholder 2",
-          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
-        }
-      ]
+          titulo: "Irónico",
+          texto: `Es irónico que la ironía sea
+          pero es patético que el cinismo sea
+          el arma del irónico sin convicción.
+          Me considero patéticamente cínico:
+          el arma del cínico sin argumentos
+          una ironía.`,
+        },
+      ],
     },
     {
       title: "Colonia Penal",
-      year: 2021,
+      year: 2023,
       type: "Poesía",
       image: "./assets/img/libros/coloniapenal.png",
-      resena: "PEl libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
+      resena:
+        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
       comprar: "",
       poemas: [
         {
-          titulo: "Poema placeholder 1",
-          texto: `Primera línea del poema\nsegunda línea\ntercera línea.`
+          titulo: "Sin titulo",
+          texto: `Los acantilados son una invitación gentil
+          Saltar por voluntad propia
+          devolver a la carne la dignidad del vuelo.
+          Dicen que el corazón colapsa antes del encuentro.
+          Cuentan seis segundos eternos quienes han visto
+          para los oídos que lo precisan.
+          el descenso a las piedras.`,
         },
         {
-          titulo: "Poema placeholder 2",
-          texto: `Otro verso placeholder\ny su continuación\nuna tercera línea.`
-        }
-      ]
+          titulo: "Sin titulo",
+          texto: `Esta isla quiso también escapar de su encierro continente.
+          la tensión incrustada en la piedra
+          en la palabra que nos despedaza por orden de la otra orilla
+          sentencia de quienes no se atreven a mirar el color de la carne.
+          Esta isla quiso ser más que un matadero
+          mucho más que la escritura del castigo.
+          En su intento de escape estuvo su condena.
+          Un surco testifica su escape y la ata a su pasado
+          
+          Una isla te rodea como el mar que la circunda.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `El cuerpo es una caja de resonancia 
+          sigue hablando tras el silencio
+          por eso se calla al cuerpo
+          hundido en el olvido
+          estallado en la piedra.
+          
+          Susurre la espuma justicia.`,
+        },
+      ],
     },
   ],
 
@@ -415,7 +555,6 @@ y quede lo que soy tras lo que borraron.`,
     title: "Isma Rivera",
     subtitle: "Poeta Cantor",
   },
-
 };
 
 window.ISMA_DATA = DATA;

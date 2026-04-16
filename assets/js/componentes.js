@@ -56,7 +56,7 @@ async function loadPage(page) {
       if (typeof renderVideos === "function") renderVideos();
     }
     if (page === "poesia" && typeof renderBooks === "function") renderBooks();
-    if (page === "bio") initBioCarrusel();
+    if (page === "bio") setTimeout(initBioCarrusel, 0);
 
     bindLinks();
 
@@ -73,12 +73,19 @@ async function loadPage(page) {
 function initBioCarrusel() {
   const track = document.getElementById("bio-carrusel-track");
   const dotsContainer = document.getElementById("bio-dots");
+  console.log("track:", track); // ¿es null?
+  console.log("dots:", dotsContainer); // ¿es null?
   if (!track || !dotsContainer) return;
+
+  // Limpiar estado previo
+  dotsContainer.innerHTML = "";
+  track.style.transform = "translateX(0%)";
 
   const slides = track.querySelectorAll(".bio-carrusel-slide");
   const total = slides.length;
   let actual = 0;
 
+  // Crear dots
   slides.forEach((_, i) => {
     const dot = document.createElement("button");
     dot.className = "bio-carrusel-dot" + (i === 0 ? " active" : "");
@@ -95,13 +102,21 @@ function initBioCarrusel() {
     });
   }
 
-  document
-    .getElementById("bio-prev")
-    ?.addEventListener("click", () => ir(actual - 1));
-  document
-    .getElementById("bio-next")
-    ?.addEventListener("click", () => ir(actual + 1));
+  // Reemplazar botones para eliminar listeners duplicados
+  const prevBtn = document.getElementById("bio-prev");
+  const nextBtn = document.getElementById("bio-next");
 
+  if (prevBtn && nextBtn) {
+    const newPrev = prevBtn.cloneNode(true);
+    const newNext = nextBtn.cloneNode(true);
+    prevBtn.replaceWith(newPrev);
+    nextBtn.replaceWith(newNext);
+
+    newPrev.addEventListener("click", () => ir(actual - 1));
+    newNext.addEventListener("click", () => ir(actual + 1));
+  }
+
+  // Swipe táctil
   let startX = 0;
   track.addEventListener(
     "touchstart",

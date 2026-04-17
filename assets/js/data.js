@@ -21,39 +21,48 @@ const DATA = {
           numero: 1,
           titulo: "La última cena de los buitres",
           duracion: "4:12",
-          letra: `Do you have enough bone-broken limbs to cover the sun?
-Hand me over your dead and give me the list of their names
-in one thousand two hundred word limit.
-Today, my body was a TV'd massacre that had to fit into sound-bites
-and word limits and moves those that are desensitized to terrorist blood.
-(Rafeef Ziadah)
+          letra: `Dile a la muerte que sentado la espero
+          con el humo compañía en los rincones
+          con los ojos negras chispas
+          con las manos fuego negro.
+          Dile a la muerte que dios no viene al baile
+          con su banquete preparado hambre viene
+          con el ciego inmasticable
+          con la sed de la carroña.
 
-Mi nombre está marcado por el fuego
-de doce tribus como doce semillas
-quemadas por el fósforo blanco
-de la estrella nación.
-
-Mi nombre está marcado por la guerra
-el odio al padre, el desprecio del hijo
-la lucha de clanes
-con manos de sangre.
-
-Mi nombre está marcado por el huacho
-aquel forzado a partir lejos
-el abandonado en la orilla contraria
-frente a la arena cristiana.`,
+          Dile a la muerte que no hay hijos del miedo
+          que se vista con sus nombres, dile puntual
+          que prepare mueca triste
+          con el llanto piedra en mano.
+          Dile a la muerte que bailando la espero
+          con el sudor de traje en la piel desnuda
+          con la sangre hecha jirones
+          con la tinta de mis cuerpos.
+          Será el descuelgue de los sin nombre
+          será el roncar de los gritos
+          caudal del que rió la rabia y arrasó el camino.
+          Pies descalzos en el precipicio, como cabras
+          seremos el riesgo que habita en el risco.`,
         },
         {
           numero: 2,
+          titulo: "Sin importar cuán grande sea la bandera",
+          duracion: "0.12",
+          letra: `Sin importar cuán grande sea
+la bandera
+jamás podrá cubrir su propio charco
+de sangre.`,
+        },
+        {
+          numero: 3,
           titulo: "A mí también me duele Chile",
-          duracion: "3:47",
+          duracion: "3:38",
           letra: `A mí también me duele Chile
 su sombra neoliberal proyectada
 en televisores cavernas, sus universidades
 moldeadoras de mano de obra intelectual
 sus ropas tendidas
 esperando al tiempo.
-
 A mí también me duele Chile
 mi patriotismo cuando el fútbol y no más
 mi desconfianza policiática
@@ -73,52 +82,65 @@ por polos morales
 marchitos.`,
         },
         {
-          numero: 3,
-          titulo: "Constelación de los caídos",
-          duracion: "5:03",
-          letra: `Levanté cada piedra por minúscula que fuera
-esperando que me hablaras en una tela olvidada.
-
-Grité por los pasillos del desierto:
-"con la astilla de un fémur yo me conformo"
-Grité.
-
-Quisiste aparecer
-desaparecer.`,
-        },
-        {
           numero: 4,
-          titulo: "Pelea de perros",
-          duracion: "4:28",
-          letra: `A un lado ladridos
-al otro justicia.
+          titulo: "Exhumar con la escritura",
+          duracion: "1:31",
+          letra: `Los años han hecho que la tierra ostente su dureza
+pisadas tantas, militares y civiles, de la esquina y la
+academia
+redujeron las palabras al ombligo de sí mismas.
+Por montones escasean los huemules, pero abundan
+solitarias
+colas de avestruces asomando en el horizonte
+estatuas de sal con la cabeza y los oídos cerrados.
+Dónde fueron las manos dejándose las uñas
+al intentar desenterrar un sentido
+posible al horror y entender que es más
+mucho más que su ronquido y sus ojos abiertos.
+El lenguaje es cartílago
+aperitivo de lombrices apenas
+cuando sirve a su vanidad.
 
-Sueños husmeando la fisura del sueño
-entre agua y humo tóxico se plasman
-tangibles mordiendo respuestas demoran
-su llegada, brillan los ojos profundos.
+Pero es hueso el lenguaje
+es la única justicia posible
+en la lengua de las muertas
+es testigo, recuerdo y porfía
+en la lengua de los muertos.
+Hunde las garras, no la cabeza avestruz
+y cava aquí y allá cava también
 
-Sus cruces señaléticas no bastan
-para que reculen los muertos de antaño
-de hoy, este ciclo no para y repite
-lo vivido por padres que perdieron hace tanto ya
-esa esperanza a causa de mentiras y mentiras que se hicieron verdades
-el arcoíris gris
-como sus ternos zapatos corbatas
-gris como el pavimento edificios grises
-los colores, así con ojos de perro en blanco y negro
-la ciudad sin carnaval
-pero no más.
-
-Hoy traemos colores y ladridos
-hoy el carnaval es nuestro, de todos nuevamente
-y nos unimos callejeros viejos canes
-somos la jauría que creíste muerta de hambre
-hambre hay
-y eres la cena esperada.`,
+que no hay número ni palabra para decir
+cuántos nos faltan
+cuántas nos faltan
+no dejes la palabra de carroña a los buitres,
+siempre con hambre
+vendrán después por ti
+y cava allá y aquí cava también
+que la tierra donde escondes tu cabeza
+solo conoce el sabor metálico de la sangre.`,
         },
         {
           numero: 5,
+          titulo: "La tormenta",
+          duracion: "1:52",
+          letra: `El rayo se vuelve trueno,
+el trueno se vuelve rayo
+Y truena en el cielo el viento
+como un tropel de caballos.
+Truenan los potros, Padre
+Palos y piedras
+Y un relámpago negro
+desata hiedras.
+
+Desata hiedras, sí,
+zaranda y zumba
+¡Mira al rayo, arrasando
+piedras y tumbas!
+¡Ronca que ronca el rayo
+de los caballos!`,
+        },
+        {
+          numero: 6,
           titulo: "Letras en la llaga",
           duracion: "3:55",
           letra: `Letra de fantasía.
@@ -134,7 +156,7 @@ la llaga guarda toda nuestra historia
 y en ella escribe el tiempo su escritura.`,
         },
         {
-          numero: 6,
+          numero: 7,
           titulo: "Canción del simple",
           duracion: "3:21",
           letra: `Letra de fantasía.
@@ -150,7 +172,7 @@ y en esa danza que al final nos nombra
 aprendemos a ser lo que no sé.`,
         },
         {
-          numero: 7,
+          numero: 8,
           titulo: "La marcha de los sin nombre",
           duracion: "4:44",
           letra: `Letra de fantasía.
@@ -166,7 +188,7 @@ marchan envueltos en su propia sombra
 hacia un amanecer que aún es raro.`,
         },
         {
-          numero: 8,
+          numero: 9,
           titulo: "El festín",
           duracion: "3:38",
           letra: `Letra de fantasía.

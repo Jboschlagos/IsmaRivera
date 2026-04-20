@@ -141,67 +141,175 @@ de los caballos!`,
         },
         {
           numero: 6,
-          titulo: "Letras en la llaga",
-          duracion: "3:55",
-          letra: `Letra de fantasía.
+          titulo: "Curva",
+          duracion: "1:44",
+          letra: `Una curva
+          una curva y un muro silencio
+          una curva y un muro y muerte
+        muerte y silencio.
+        Subiendo por la curva
+        la higuera y el palto
+        los damascos en verano
+        los inviernos con olor a parafina
+        mi mamá lavando los platos
+        mientras por fuera la Funa al Mamo
+        “anda tú, voy altiro”.
+        Mi hermano llorando “atropellaron al perro”
+        cuatro fueron enterrados
+        dos de sangre
+        y esa curva siempre
+        las flores haciéndole guardia a los huesos
+        hasta marchitarse.
 
-En el umbral del tiempo detenido
-las palabras se vuelven ceniza fría,
-cada sílaba un río contenido
-que busca cauce en la melancolía.
+        Mi papá repitiendo mantras en el cerro cada sábado
+        para zafar de la tristeza de los ecos del domingo
+        mis hermanas y sus cidis ochenteros que canté mil veces
+        barriendo la casa de muñecas
+        los gansos y gallinetas desplumando el recuerdo
+        de esa curva y su muro
+        y las bolitas compradas en el bazar que después fueron
 
-No hay muro que resista la memoria
-ni olvido que no tenga su fisura,
-la llaga guarda toda nuestra historia
-y en ella escribe el tiempo su escritura.`,
+        cervezas
+        como después las palabras pasaron a ser otras palabras
+        y cambió para siempre su significado
+        pero antes el vidrio que abrió la carne
+        y la tierra amontonada en el fondo del jardín
+        donde por última vez escuché los gritos que
+        subían de esa curva y su silencio.`,
         },
         {
           numero: 7,
-          titulo: "Canción del simple",
-          duracion: "3:21",
-          letra: `Letra de fantasía.
+          titulo: "Impostores sustitutos",
+          duracion: "3:30",
+          letra: `Mientras maquillas tu imagen
+        y estudias cada palabra que dirás
+        cada nueva falsedad
+        cada verdad por ocultar
+        aquí comienza a gestarse el ocaso
+        de tu dominio empresarial.
+        Mientras otros trabajan la tierra
+        que tu mesa de alimentos llenará
+        sin una gota de sudor
+        sin propio mérito, cabrón
+        aquí empezamos a darnos cuenta
+        de lo hay tras esa piel.
+        Qué pasará cuando no tengas
+        la mano que te hace el pan
+        la que a tu hijos enseña
+        mientras vas a trabajar.
+        Cuando el sudor entienda que de él
+        depende la libertad.
+        Qué pasará cuando las monedas
+        sea lo que tienes para comer
+        se astillarán tus dientes
+        masticando sangrará tu paladar
+        y un sabor metálico en la garganta
+        ahogará tu grito.
 
-Simple como el agua que desciende
-simple como el viento en la llanura,
-el corazón que busca y no comprende
-la extraña geometría de la altura.
-
-Todo lo que fue se vuelve sombra
-todo lo que es se vuelve lo que fue,
-y en esa danza que al final nos nombra
-aprendemos a ser lo que no sé.`,
+        Son impostores sustitutos
+        es política de papel
+        y están gozando
+        pasándolo bien
+        están gozando de poder.`,
         },
         {
           numero: 8,
-          titulo: "La marcha de los sin nombre",
-          duracion: "4:44",
-          letra: `Letra de fantasía.
+          titulo: "Herencia",
+          duracion: "0:50",
+          letra: `Violento testigo el desierto y sus piedras
+jamás enseñaron a olvidar la dinamita
+en los huesos la sal encostró la memoria.
 
-Marchan los que nunca tuvieron bandera
-marchan los que el tiempo borró del mapa,
-su voz es el eco de una primavera
-que ningún invierno del todo tapa.
+Carreteras sus ánimas, ecos de muerte
+piedad no tuvieron los rieles del tiempo
+se asoman y abrazan el breve quebranto.
+Del polvo al polvo
+mas no cubre las capas
+de historia que explota en el hombre
+en el mineral.
 
-Son la raíz que nadie ve ni nombra
-son el silencio antes del grito claro,
-marchan envueltos en su propia sombra
-hacia un amanecer que aún es raro.`,
+Y en cada grieta brotó insolente
+porfía en las alas del desenterrado
+las fosas quemando en el viento sentencias.
+Nuestra aspereza es herencia de la roca.
+Del hueso al hueso
+somos agua hirviendo.`,
         },
         {
           numero: 9,
-          titulo: "El festín",
-          duracion: "3:38",
-          letra: `Letra de fantasía.
+          titulo: "Canción del simple",
+          duracion: "3:24",
+          letra: `Yo quisiera ser tan dulce
+como un caramelo en tu boca
+decirte el día está lindo,
+nuestros hijos irán a París.
 
-Siéntate a la mesa del festín eterno
-donde los comensales son de hueso y viento,
-prueba el vino amargo del invierno
-y el pan cocido al fuego del tormento.
+Yo quisiera ser tan simple
+que pueda morirme en tus ojos
+estar contento del cuerpo,
+sentir el sonido y el aire
+y regalarte en navidad flores de plástico
+y un cisne enorme de acrílico.
 
-Nadie sale intacto del banquete
-nadie sale igual de la función,
-la noche siempre cobra su jinete
-y el alba siempre pide su porción.`,
+Yo te metiera en mi casa,
+si yo tuviera una casa.
+Yo te buscara en la prensa,
+si algo dijera la prensa.
+Yo te subiera en los muros,
+si no estuvieran tan altos.
+Dejara crecer mi barba
+para parecerme a los dioses
+si lo quisiera hacer, amor, si yo quisiera
+si yo creyera en los dioses.
+
+Pero he leído de más
+o se ha vuelto frío mi corazón
+y no puedo ser sincero.`,
+        },
+        {
+          numero: 10,
+          titulo: "Canción del simple",
+          duracion: "0:29",
+          letra: `A los árboles no les interesa el significado del
+canto de los pájaros ni a las olas
+el horadar de las piedras.
+Nada hay sobre el polvo de la madera o
+bajo el sonido de mis palabras
+que detenga la humedad de la muerte prematura.
+Las sombras seguirán atadas a sus cuerpos
+esperando la lluvia que les devuelva su brillo.`,
+        },
+        {
+          numero: 11,
+          titulo: "Pelea de perros",
+          duracion: "4:30",
+          letra: `A un lado ladridos
+al otro justicia.
+
+Sueños husmeando la fisura del sueño
+entre agua y humo tóxico se plasman
+tangibles mordiendo respuestas demoran
+su llegada, brillan los ojos profundos.
+
+Sus cruces señaléticas no bastan
+para que reculen los muertos de antaño
+de hoy, este ciclo no para y repite
+lo vivido por padres que perdieron hace tanto ya
+esa esperanza a causa de mentiras
+y mentiras que se hicieron verdades
+el arcoíris gris
+como sus ternos zapatos corbatas
+gris como el pavimento edificios grises
+los colores, así con ojos de perro en
+blanco y negro
+la ciudad sin carnaval
+pero no más.
+
+Hoy traemos colores y ladridos
+hoy el carnaval es nuestro, de todos nuevamente
+y nos unimos callejeros viejos canes
+somos la jauría que creíste muerta de hambre
+hambre hay y eres la cena esperada.`,
         },
       ],
     },

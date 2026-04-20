@@ -480,6 +480,38 @@ y quede lo que soy tras lo que borraron.`,
         },
       ],
     },
+    {
+      youtubeId: "ZN7DC9lb51A",
+      title: "PM#4. Festival Poesía y Música",
+      year: 2021,
+      shortDesc:
+        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
+      longDesc:
+        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
+      credits: [
+        { rol: "Interpretación", nombre: "Isma Rivera" },
+        {
+          rol: "Músicos",
+          nombre:
+            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
+        },
+        {
+          rol: "Dirección y cámara",
+          nombre: "Fernando Pérez y Marcela Parra",
+        },
+        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
+        {
+          rol: "Evento",
+          nombre:
+            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
+        },
+        {
+          rol: "Enlaces",
+          nombre:
+            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
+        },
+      ],
+    },
   ],
 
   // ── LIBROS ────────────────────────────────────────────────

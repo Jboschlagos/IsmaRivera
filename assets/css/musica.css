@@ -715,3 +715,11 @@
   padding-top: 1.5rem;
   display: block;
 }
+
+.album-title {
+  cursor: pointer;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}

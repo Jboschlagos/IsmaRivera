@@ -13,9 +13,14 @@ const DATA = {
       image: "./assets/img/discos/ultimacena.png",
       spotify:
         "https://open.spotify.com/intl-es/album/6CtCJ71uUcKSs59ZmALo08?si=vQ_4hc5oQPex5WhYBRHzwQ",
-      bandcamp: "selloprecario.bandcamp.com/album/la-ltima-cena-de-los-buitres",
+      bandcamp:
+        "https://selloprecario.bandcamp.com/album/la-ltima-cena-de-los-buitres",
       resena:
-        "Primer disco solista de Isma Rivera. Una propuesta que combina escritura, voz y experimentación sonora, cruzando el punk con la tradición folclórica latinoamericana.",
+        "La última cena de los buitres (2019) de Isma Rivera es un trabajo de factura colectiva que oscila constantemente entre la solemnidad y la rabia callejera. Los poemas vueltos “cante” tributan la tradición oral de distintos territorios y la voz actúa como columna vertebral, haciendo de este disco una experiencia poética de la oralidad. Los géneros musicales encuentran sus límites difuminados, abarcando así sonidos que van del postpunk a la música de raíz.",
+      download: {
+        label: "Descargar Cuadernillo",
+        url: "/assets/docs/La.última.cena.de.los.buitres_Isma.Rivera.2020.pdf",
+      },
       tracklist: [
         {
           numero: 1,
@@ -318,69 +323,230 @@ hambre hay y eres la cena esperada.`,
       year: 2022,
       description: "Sencillo",
       image: "./assets/img/discos/el_silencio.png",
-      spotify: "https://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB",
+      spotify:
+        "hhttps://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
       bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
-      resena: "Sencillo de 2022.",
+      resena:
+        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
       tracklist: [
         {
           numero: 1,
           titulo: "El Silencio",
-          duracion: "3:50",
-          letra: `Letra de fantasía.
+          duracion: "4:13",
+          letra: `Crecí entre hombres que adoraban el silencio
+creí que eran falsos ellos y todos sus nombres
+feliz fui siendo niña abierto en ese vértice.
+feliz fui en la fuerza de mujeres y desvelos.
 
-El silencio tiene dientes
-el silencio tiene manos,
-el silencio es más urgente
-que los gritos más lejanos.
+Intentaron tanto hacer que el hombre que parezco
+fuera modelo de macho recio, un campeón.
+Competir.
 
-Cuando todo calla adentro
-cuando afuera ruge el mundo,
-el silencio es un encuentro
-con lo propio más profundo.`,
+Crecí en las penas de este fuego que es espanto
+crecí y vi amigos convertidos en sus padres
+feliz me hice siendo entre vestidos y humos cómplices
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron tapar tanto a este hombre que soy
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.
+
+Creí que sus formas no eran mías
+que para allá no voy
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron callar tanto a este hombre que soy
+
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.`,
         },
       ],
     },
     {
-      title: "Errantes",
+      title: "Desbautízame",
       year: 2015,
-      description: "Desbautízame",
+      description: "Errante",
       image: "/assets/img/discos/errantes.png",
-      spotify: "https://open.spotify.com/album/ejemplo3",
-      bandcamp: "https://selloprecario.bandcamp.com/album/desbaut-zame",
-      resena: "Disco del proyecto Errantes.",
+      spotify:
+        "https://open.spotify.com/intl-es/album/7h2CMdDJxUQJXguvEcIfC2?si=x3nWZa2aQJOkZEEetSijIA",
+      bandcamp: "",
+      resena:
+        "EP incluído en el libro del mismo nombre. Música y poesía se fusionan en el sonido de Errante. El grito de seis espíritus con cocktails molotov de rock patiperro.",
       tracklist: [
         {
           numero: 1,
-          titulo: "Errante I",
-          duracion: "4:10",
-          letra: `Letra de fantasía.
+          titulo: "Tumbas de luz",
+          duracion: "2:43",
+          letra: `Hasta dónde llegarás con este pulso descorchado
+la rima al son del miedo y la ceguera
+agarrado del cogote por cordeles sacros
+con sacos de culpa ajenos al tiempo
+lejos del misterio y la duda, hasta dónde.
 
-Errante por los bordes de la patria
-errante por los márgenes del río,
-cargando con la herencia de una hazaña
-que nadie reclamó bajo este frío.`,
+Hasta cuándo seguirás pontificando el temor
+propagando la miseria en la sangre del hombre
+infecta la vida, seca el fuego del ayllu
+pudre la carne de tu descendencia
+que muere nonata, anda dime, hasta cuándo.
+
+Te digo y escúchame bien, reclamo
+el dolor y la dicha perdida, la Fiesta
+el goce del cuerpo en la tierra mojada
+que el hombre replique la tierra en el cielo
+lejos del vacío lejos
+de tu paraíso infecto.`,
         },
         {
           numero: 2,
-          titulo: "Errante II",
-          duracion: "3:55",
-          letra: `Letra de fantasía.
+          titulo: "La Rabia",
+          duracion: "3:27",
+          letra: `Rasgarse la voz con la tierra en las uñas:
+el mínimo gesto que el hombre se debe.
 
-El camino no pregunta de dónde vienes
-el camino solo sabe que estás yendo,
-y entre los pies y el polvo que sostienes
-vas dejando lo que fuiste construyendo.`,
+Volcamos la sangre
+no sirven sus ruegos:
+la sangre no entra de vuelta en la piedra.
+
+Nos queda la voz la palabra el sonido
+no muere el impulso primario, la rabia.`,
         },
         {
           numero: 3,
-          titulo: "Desbautízame",
-          duracion: "5:12",
-          letra: `Letra de fantasía.
+          titulo: "Letras en la llaga",
+          duracion: "2:26",
+          letra: `Mi nombre está marcado por el fuego
+de doce tribus como doce semillas
+quemadas por el fósforo blanco
+de la estrella nación.
 
-Desbautízame del nombre que me dieron
-desbautízame del miedo que sembraron,
-que caigan los apellidos que me pusieron
-y quede lo que soy tras lo que borraron.`,
+Mi nombre está marcado por la guerra
+el odio al padre, el desprecio del hijo
+la lucha de clanes
+con manos de sangre.
+
+Mi nombre está marcado por el huacho
+aquel forzado a partir lejos
+el abandonado en la orilla contraria
+frente a la arena cristiana.
+
+Mi nombre está marcado por la tierra
+del gitano sediento de vida
+niño bastardo expuesto a filo de cuchillo.
+
+¡Agar madre esclava!
+No pudieron con tu fuerza
+nada consiguieron con el destierro
+de una madre y su hijo
+tigres fuimos
+somos tigres
+
+habitamos el desierto.`,
+        },
+        {
+          numero: 4,
+          titulo: "Desbautízame",
+          duracion: "2:26",
+          letra: `Me niegas la caída al pozo
+condenas el autosacrificio
+a manos de este yo cansado
+aun cuando es claro que es tarde
+que como resonaron las palabras de otro
+no merece la pena matarse, siempre
+lo hace uno demasiado tarde.
+
+Pero arrojaste a tu hijo a cargarla
+carnada entre buitres hambrientos.
+
+Se entregó su cuerpo al látigo
+con la docilidad del clavo
+o del suicidio implacable:
+la espina.
+Lo asististe -hipócrita de hipócritas-
+en su frente. No me digas
+que ese pobre es tu hijo.
+
+Y entre adorar y orar te dieron oro.
+
+Cruzaste la vereda sobre la cruz de tu hijo
+te sentaste a la mesa de los llenos
+engulliste manjares
+manchados de sangre salada, las costras
+
+de los que no aceptamos cruzar
+de los que damos el pellejo cuando cruje
+serán astillas en sus tráqueas.
+
+Han parido en un lugar del Edén
+el génesis de este rojo apocalipsis.
+
+Nada más podrá nacer de la tierra que el polvo
+tu regalo fue el frío y el olvido
+la piedra que no suda ni llora
+la mancha en la sotana, la culpa
+del vacío ante el plato de comida.`,
+        },
+        {
+          numero: 5,
+          titulo: "De vuelos y caídas",
+          duracion: "3:01",
+          letra: `Qué pasará
+cuando dejemos las ciudades y la tierra
+vuelva a ser de tus manos
+cuando dejes de ver al hombre
+al vacío de sus ojos
+y en esa mirada entiendas
+que el hombre que te quiso
+y el que te querrá
+no valen nada
+solo importa el que está enfrente
+devolviendo el brillo que atrajo a la polilla y la urraca
+el brillo en la pupila
+amparada solo en la línea
+sin aspirar a nada
+que no sea la alegría.
+
+Qué pasará
+cuando Venus se levante
+y el cosmos se encienda agarrotado
+de tanta inmovilidad forzada
+y la mires despojado de estrechez
+comprendiendo el misterio oculto en el monte
+del que saltaste con alas de cera
+la ceguera es el exceso de visión.
+
+Tus alas quemadas traducen el fuego.`,
+        },
+        {
+          numero: 6,
+          titulo: "Cadenante",
+          duracion: "1:55",
+          letra: `Pedaleando voy rasgando el pavimento
+desafiando cada bache, la extensión
+del cuerpo los motores y los fierros.
+
+El viento frío es un cuchillo para el corte
+del verso
+bajo el ritmo del pedal.
+
+Canción protesta en cambio pesado
+mirando las calles desplazado, el poder
+tiembla ante la furia de las cadenas.
+
+Salto al sexto y al quinto en subida
+al cuarto no quieren las piernas, pedante
+encabalgo las piedras y palabras.
+
+Bajo las ruedas la tinta memoria
+va empapando los kilómetros, me muevo
+a destajo en las calles de Santiago.
+
+No podrán con la rabia del pedal
+el verso es una calle que termina
+donde el verbo se comienza a incendiar.`,
         },
       ],
     },

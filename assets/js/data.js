@@ -882,3 +882,5 @@ donde el verbo se comienza a incendiar.`,
     subtitle: "Poeta Cantor",
   },
 };
+
+window.ISMA_DATA = ISMA_DATA;

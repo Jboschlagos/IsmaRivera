@@ -7,6 +7,54 @@ const DATA = {
   // ── DISCOS ────────────────────────────────────────────────
   albums: [
     {
+      title: "El Silencio",
+      year: 2022,
+      description: "Sencillo",
+      image: "./assets/img/discos/el_silencio.png",
+      spotify:
+        "hhttps://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
+      bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
+      resena:
+        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
+      tracklist: [
+        {
+          numero: 1,
+          titulo: "El Silencio",
+          duracion: "4:13",
+          letra: `Crecí entre hombres que adoraban el silencio
+creí que eran falsos ellos y todos sus nombres
+feliz fui siendo niña abierto en ese vértice.
+feliz fui en la fuerza de mujeres y desvelos.
+
+Intentaron tanto hacer que el hombre que parezco
+fuera modelo de macho recio, un campeón.
+Competir.
+
+Crecí en las penas de este fuego que es espanto
+crecí y vi amigos convertidos en sus padres
+feliz me hice siendo entre vestidos y humos cómplices
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron tapar tanto a este hombre que soy
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.
+
+Creí que sus formas no eran mías
+que para allá no voy
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron callar tanto a este hombre que soy
+
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.`,
+        },
+      ],
+    },
+    {
       title: "La última cena de los buitres",
       year: 2019,
       description: "Primer disco solista de Isma Rivera.",
@@ -315,54 +363,6 @@ hoy el carnaval es nuestro, de todos nuevamente
 y nos unimos callejeros viejos canes
 somos la jauría que creíste muerta de hambre
 hambre hay y eres la cena esperada.`,
-        },
-      ],
-    },
-    {
-      title: "El Silencio",
-      year: 2022,
-      description: "Sencillo",
-      image: "./assets/img/discos/el_silencio.png",
-      spotify:
-        "hhttps://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
-      bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
-      resena:
-        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
-      tracklist: [
-        {
-          numero: 1,
-          titulo: "El Silencio",
-          duracion: "4:13",
-          letra: `Crecí entre hombres que adoraban el silencio
-creí que eran falsos ellos y todos sus nombres
-feliz fui siendo niña abierto en ese vértice.
-feliz fui en la fuerza de mujeres y desvelos.
-
-Intentaron tanto hacer que el hombre que parezco
-fuera modelo de macho recio, un campeón.
-Competir.
-
-Crecí en las penas de este fuego que es espanto
-crecí y vi amigos convertidos en sus padres
-feliz me hice siendo entre vestidos y humos cómplices
-feliz fue mi rabia al encontrar la forma de explotar.
-
-Intentaron tapar tanto a este hombre que soy
-que no refleja nada al que querían: un varón.
-Competir
-por la casa, el colegio, por el auto
-y enterrando bien adentro en el silencio tu miedo.
-
-Creí que sus formas no eran mías
-que para allá no voy
-feliz fue mi rabia al encontrar la forma de explotar.
-
-Intentaron callar tanto a este hombre que soy
-
-que no refleja nada al que querían: un varón.
-Competir
-por la casa, el colegio, por el auto
-y enterrando bien adentro en el silencio tu miedo.`,
         },
       ],
     },

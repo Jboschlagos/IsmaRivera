@@ -4,56 +4,8 @@
  */
 
 const DATA = {
-  // ── DISCOS (más reciente primero) ─────────────────────────
+  // ── DISCOS ────────────────────────────────────────────────
   albums: [
-    {
-      title: "El Silencio",
-      year: 2022,
-      description: "Sencillo",
-      image: "./assets/img/discos/el_silencio.png",
-      spotify:
-        "https://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
-      bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
-      resena:
-        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
-      tracklist: [
-        {
-          numero: 1,
-          titulo: "El Silencio",
-          duracion: "4:13",
-          letra: `Crecí entre hombres que adoraban el silencio
-creí que eran falsos ellos y todos sus nombres
-feliz fui siendo niña abierto en ese vértice.
-feliz fui en la fuerza de mujeres y desvelos.
- 
-Intentaron tanto hacer que el hombre que parezco
-fuera modelo de macho recio, un campeón.
-Competir.
- 
-Crecí en las penas de este fuego que es espanto
-crecí y vi amigos convertidos en sus padres
-feliz me hice siendo entre vestidos y humos cómplices
-feliz fue mi rabia al encontrar la forma de explotar.
- 
-Intentaron tapar tanto a este hombre que soy
-que no refleja nada al que querían: un varón.
-Competir
-por la casa, el colegio, por el auto
-y enterrando bien adentro en el silencio tu miedo.
- 
-Creí que sus formas no eran mías
-que para allá no voy
-feliz fue mi rabia al encontrar la forma de explotar.
- 
-Intentaron callar tanto a este hombre que soy
- 
-que no refleja nada al que querían: un varón.
-Competir
-por la casa, el colegio, por el auto
-y enterrando bien adentro en el silencio tu miedo.`,
-        },
-      ],
-    },
     {
       title: "La última cena de los buitres",
       year: 2019,
@@ -64,10 +16,10 @@ y enterrando bien adentro en el silencio tu miedo.`,
       bandcamp:
         "https://selloprecario.bandcamp.com/album/la-ltima-cena-de-los-buitres",
       resena:
-        "La última cena de los buitres (2019) de Isma Rivera es un trabajo de factura colectiva que oscila constantemente entre la solemnidad y la rabia callejera. Los poemas vueltos "cante" tributan la tradición oral de distintos territorios y la voz actúa como columna vertebral, haciendo de este disco una experiencia poética de la oralidad. Los géneros musicales encuentran sus límites difuminados, abarcando así sonidos que van del postpunk a la música de raíz.",
+        "La última cena de los buitres (2019) de Isma Rivera es un trabajo de factura colectiva que oscila constantemente entre la solemnidad y la rabia callejera. Los poemas vueltos “cante” tributan la tradición oral de distintos territorios y la voz actúa como columna vertebral, haciendo de este disco una experiencia poética de la oralidad. Los géneros musicales encuentran sus límites difuminados, abarcando así sonidos que van del postpunk a la música de raíz.",
       download: {
         label: "Descargar Cuadernillo",
-        url: "/assets/docs/La.última.cena.de.los.buitres_Isma.Rivera.2020.pdf",
+        url: "/assets/docs/La.última.cena.de.los.buitres_Isma.Rivera.2020.pdf",
       },
       tracklist: [
         {
@@ -82,7 +34,7 @@ y enterrando bien adentro en el silencio tu miedo.`,
           con su banquete preparado hambre viene
           con el ciego inmasticable
           con la sed de la carroña.
- 
+
           Dile a la muerte que no hay hijos del miedo
           que se vista con sus nombres, dile puntual
           que prepare mueca triste
@@ -100,7 +52,7 @@ y enterrando bien adentro en el silencio tu miedo.`,
         {
           numero: 2,
           titulo: "Sin importar cuán grande sea la bandera",
-          duracion: "0:12",
+          duracion: "0.12",
           letra: `Sin importar cuán grande sea
 la bandera
 jamás podrá cubrir su propio charco
@@ -123,7 +75,7 @@ oculta tras el polvo de moneda
 mi insomnio ideológico
 cultivado en memorias ajenas
 mis oídos incrédulos.
- 
+
 A mí también me duele Chile
 tu absoluta falta
 de médula conducta
@@ -153,7 +105,7 @@ mucho más que su ronquido y sus ojos abiertos.
 El lenguaje es cartílago
 aperitivo de lombrices apenas
 cuando sirve a su vanidad.
- 
+
 Pero es hueso el lenguaje
 es la única justicia posible
 en la lengua de las muertas
@@ -161,7 +113,7 @@ es testigo, recuerdo y porfía
 en la lengua de los muertos.
 Hunde las garras, no la cabeza avestruz
 y cava aquí y allá cava también
- 
+
 que no hay número ni palabra para decir
 cuántos nos faltan
 cuántas nos faltan
@@ -184,7 +136,7 @@ Truenan los potros, Padre
 Palos y piedras
 Y un relámpago negro
 desata hiedras.
- 
+
 Desata hiedras, sí,
 zaranda y zumba
 ¡Mira al rayo, arrasando
@@ -206,14 +158,14 @@ de los caballos!`,
         los inviernos con olor a parafina
         mi mamá lavando los platos
         mientras por fuera la Funa al Mamo
-        "anda tú, voy altiro".
-        Mi hermano llorando "atropellaron al perro"
+        “anda tú, voy altiro”.
+        Mi hermano llorando “atropellaron al perro”
         cuatro fueron enterrados
         dos de sangre
         y esa curva siempre
         las flores haciéndole guardia a los huesos
         hasta marchitarse.
- 
+
         Mi papá repitiendo mantras en el cerro cada sábado
         para zafar de la tristeza de los ecos del domingo
         mis hermanas y sus cidis ochenteros que canté mil veces
@@ -221,7 +173,7 @@ de los caballos!`,
         los gansos y gallinetas desplumando el recuerdo
         de esa curva y su muro
         y las bolitas compradas en el bazar que después fueron
- 
+
         cervezas
         como después las palabras pasaron a ser otras palabras
         y cambió para siempre su significado
@@ -258,7 +210,7 @@ de los caballos!`,
         masticando sangrará tu paladar
         y un sabor metálico en la garganta
         ahogará tu grito.
- 
+
         Son impostores sustitutos
         es política de papel
         y están gozando
@@ -272,7 +224,7 @@ de los caballos!`,
           letra: `Violento testigo el desierto y sus piedras
 jamás enseñaron a olvidar la dinamita
 en los huesos la sal encostró la memoria.
- 
+
 Carreteras sus ánimas, ecos de muerte
 piedad no tuvieron los rieles del tiempo
 se asoman y abrazan el breve quebranto.
@@ -280,7 +232,7 @@ Del polvo al polvo
 mas no cubre las capas
 de historia que explota en el hombre
 en el mineral.
- 
+
 Y en cada grieta brotó insolente
 porfía en las alas del desenterrado
 las fosas quemando en el viento sentencias.
@@ -296,14 +248,14 @@ somos agua hirviendo.`,
 como un caramelo en tu boca
 decirte el día está lindo,
 nuestros hijos irán a París.
- 
+
 Yo quisiera ser tan simple
 que pueda morirme en tus ojos
 estar contento del cuerpo,
 sentir el sonido y el aire
 y regalarte en navidad flores de plástico
 y un cisne enorme de acrílico.
- 
+
 Yo te metiera en mi casa,
 si yo tuviera una casa.
 Yo te buscara en la prensa,
@@ -314,14 +266,14 @@ Dejara crecer mi barba
 para parecerme a los dioses
 si lo quisiera hacer, amor, si yo quisiera
 si yo creyera en los dioses.
- 
+
 Pero he leído de más
 o se ha vuelto frío mi corazón
 y no puedo ser sincero.`,
         },
         {
           numero: 10,
-          titulo: "Lluvia",
+          titulo: "Canción del simple",
           duracion: "0:29",
           letra: `A los árboles no les interesa el significado del
 canto de los pájaros ni a las olas
@@ -338,12 +290,12 @@ esperando la lluvia que les devuelva su brillo.`,
           duracion: "4:30",
           letra: `A un lado ladridos
 al otro justicia.
- 
+
 Sueños husmeando la fisura del sueño
 entre agua y humo tóxico se plasman
 tangibles mordiendo respuestas demoran
 su llegada, brillan los ojos profundos.
- 
+
 Sus cruces señaléticas no bastan
 para que reculen los muertos de antaño
 de hoy, este ciclo no para y repite
@@ -357,12 +309,60 @@ los colores, así con ojos de perro en
 blanco y negro
 la ciudad sin carnaval
 pero no más.
- 
+
 Hoy traemos colores y ladridos
 hoy el carnaval es nuestro, de todos nuevamente
 y nos unimos callejeros viejos canes
 somos la jauría que creíste muerta de hambre
 hambre hay y eres la cena esperada.`,
+        },
+      ],
+    },
+    {
+      title: "El Silencio",
+      year: 2022,
+      description: "Sencillo",
+      image: "./assets/img/discos/el_silencio.png",
+      spotify:
+        "hhttps://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
+      bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
+      resena:
+        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
+      tracklist: [
+        {
+          numero: 1,
+          titulo: "El Silencio",
+          duracion: "4:13",
+          letra: `Crecí entre hombres que adoraban el silencio
+creí que eran falsos ellos y todos sus nombres
+feliz fui siendo niña abierto en ese vértice.
+feliz fui en la fuerza de mujeres y desvelos.
+
+Intentaron tanto hacer que el hombre que parezco
+fuera modelo de macho recio, un campeón.
+Competir.
+
+Crecí en las penas de este fuego que es espanto
+crecí y vi amigos convertidos en sus padres
+feliz me hice siendo entre vestidos y humos cómplices
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron tapar tanto a este hombre que soy
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.
+
+Creí que sus formas no eran mías
+que para allá no voy
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron callar tanto a este hombre que soy
+
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.`,
         },
       ],
     },
@@ -386,13 +386,13 @@ la rima al son del miedo y la ceguera
 agarrado del cogote por cordeles sacros
 con sacos de culpa ajenos al tiempo
 lejos del misterio y la duda, hasta dónde.
- 
+
 Hasta cuándo seguirás pontificando el temor
 propagando la miseria en la sangre del hombre
 infecta la vida, seca el fuego del ayllu
 pudre la carne de tu descendencia
 que muere nonata, anda dime, hasta cuándo.
- 
+
 Te digo y escúchame bien, reclamo
 el dolor y la dicha perdida, la Fiesta
 el goce del cuerpo en la tierra mojada
@@ -406,11 +406,11 @@ de tu paraíso infecto.`,
           duracion: "3:27",
           letra: `Rasgarse la voz con la tierra en las uñas:
 el mínimo gesto que el hombre se debe.
- 
+
 Volcamos la sangre
 no sirven sus ruegos:
 la sangre no entra de vuelta en la piedra.
- 
+
 Nos queda la voz la palabra el sonido
 no muere el impulso primario, la rabia.`,
         },
@@ -422,28 +422,28 @@ no muere el impulso primario, la rabia.`,
 de doce tribus como doce semillas
 quemadas por el fósforo blanco
 de la estrella nación.
- 
+
 Mi nombre está marcado por la guerra
 el odio al padre, el desprecio del hijo
 la lucha de clanes
 con manos de sangre.
- 
+
 Mi nombre está marcado por el huacho
 aquel forzado a partir lejos
 el abandonado en la orilla contraria
 frente a la arena cristiana.
- 
+
 Mi nombre está marcado por la tierra
 del gitano sediento de vida
 niño bastardo expuesto a filo de cuchillo.
- 
+
 ¡Agar madre esclava!
 No pudieron con tu fuerza
 nada consiguieron con el destierro
 de una madre y su hijo
 tigres fuimos
 somos tigres
- 
+
 habitamos el desierto.`,
         },
         {
@@ -457,10 +457,10 @@ aun cuando es claro que es tarde
 que como resonaron las palabras de otro
 no merece la pena matarse, siempre
 lo hace uno demasiado tarde.
- 
+
 Pero arrojaste a tu hijo a cargarla
 carnada entre buitres hambrientos.
- 
+
 Se entregó su cuerpo al látigo
 con la docilidad del clavo
 o del suicidio implacable:
@@ -468,21 +468,21 @@ la espina.
 Lo asististe -hipócrita de hipócritas-
 en su frente. No me digas
 que ese pobre es tu hijo.
- 
+
 Y entre adorar y orar te dieron oro.
- 
+
 Cruzaste la vereda sobre la cruz de tu hijo
 te sentaste a la mesa de los llenos
 engulliste manjares
 manchados de sangre salada, las costras
- 
+
 de los que no aceptamos cruzar
 de los que damos el pellejo cuando cruje
 serán astillas en sus tráqueas.
- 
+
 Han parido en un lugar del Edén
 el génesis de este rojo apocalipsis.
- 
+
 Nada más podrá nacer de la tierra que el polvo
 tu regalo fue el frío y el olvido
 la piedra que no suda ni llora
@@ -508,7 +508,7 @@ el brillo en la pupila
 amparada solo en la línea
 sin aspirar a nada
 que no sea la alegría.
- 
+
 Qué pasará
 cuando Venus se levante
 y el cosmos se encienda agarrotado
@@ -517,7 +517,7 @@ y la mires despojado de estrechez
 comprendiendo el misterio oculto en el monte
 del que saltaste con alas de cera
 la ceguera es el exceso de visión.
- 
+
 Tus alas quemadas traducen el fuego.`,
         },
         {
@@ -527,23 +527,23 @@ Tus alas quemadas traducen el fuego.`,
           letra: `Pedaleando voy rasgando el pavimento
 desafiando cada bache, la extensión
 del cuerpo los motores y los fierros.
- 
+
 El viento frío es un cuchillo para el corte
 del verso
 bajo el ritmo del pedal.
- 
+
 Canción protesta en cambio pesado
 mirando las calles desplazado, el poder
 tiembla ante la furia de las cadenas.
- 
+
 Salto al sexto y al quinto en subida
 al cuarto no quieren las piernas, pedante
 encabalgo las piedras y palabras.
- 
+
 Bajo las ruedas la tinta memoria
 va empapando los kilómetros, me muevo
 a destajo en las calles de Santiago.
- 
+
 No podrán con la rabia del pedal
 el verso es una calle que termina
 donde el verbo se comienza a incendiar.`,
@@ -551,57 +551,9 @@ donde el verbo se comienza a incendiar.`,
       ],
     },
   ],
- 
-  // ── VIDEOS (más reciente primero) ─────────────────────────
+
+  // ── VIDEOS ────────────────────────────────────────────────
   videos: [
-    {
-      youtubeId: "ZN7DC9lb51A",
-      title: "PM#4. Festival Poesía y Música",
-      year: 2021,
-      shortDesc:
-        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
-      longDesc:
-        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
-      credits: [
-        { rol: "Interpretación", nombre: "Isma Rivera" },
-        {
-          rol: "Músicos",
-          nombre:
-            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
-        },
-        { rol: "Dirección y cámara", nombre: "Fernando Pérez y Marcela Parra" },
-        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
-        {
-          rol: "Evento",
-          nombre:
-            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
-        },
-        {
-          rol: "Enlaces",
-          nombre:
-            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
-        },
-      ],
-    },
-    {
-      youtubeId: "Od2zkAa2_q4",
-      title: "Pelea de perros",
-      year: 2020,
-      shortDesc:
-        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
-      longDesc: "",
-      credits: [
-        { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
-        {
-          rol: "Realizadores",
-          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
-        },
-        { rol: "Música", nombre: "Daniel Jesús Díaz" },
-        { rol: "Poesía y voz", nombre: "Isma Rivera" },
-        { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
-        { rol: "Fecha", nombre: "21 de noviembre de 2020" },
-      ],
-    },
     {
       youtubeId: "K0JE1jFJG4w",
       title: "La última cena de los buitres",
@@ -656,6 +608,25 @@ donde el verbo se comienza a incendiar.`,
       ],
     },
     {
+      youtubeId: "Od2zkAa2_q4",
+      title: "Pelea de perros",
+      year: 2020,
+      shortDesc:
+        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
+      longDesc: "",
+      credits: [
+        { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
+        {
+          rol: "Realizadores",
+          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
+        },
+        { rol: "Música", nombre: "Daniel Jesús Díaz" },
+        { rol: "Poesía y voz", nombre: "Isma Rivera" },
+        { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
+        { rol: "Fecha", nombre: "21 de noviembre de 2020" },
+      ],
+    },
+    {
       youtubeId: "uJBwLT5c1RE",
       title: "Canción del simple",
       year: 2019,
@@ -675,80 +646,42 @@ donde el verbo se comienza a incendiar.`,
         },
       ],
     },
+    {
+      youtubeId: "ZN7DC9lb51A",
+      title: "PM#4. Festival Poesía y Música",
+      year: 2021,
+      shortDesc:
+        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
+      longDesc:
+        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
+      credits: [
+        { rol: "Interpretación", nombre: "Isma Rivera" },
+        {
+          rol: "Músicos",
+          nombre:
+            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
+        },
+        {
+          rol: "Dirección y cámara",
+          nombre: "Fernando Pérez y Marcela Parra",
+        },
+        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
+        {
+          rol: "Evento",
+          nombre:
+            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
+        },
+        {
+          rol: "Enlaces",
+          nombre:
+            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
+        },
+      ],
+    },
   ],
- 
-  // ── LIBROS (más reciente primero) ─────────────────────────
+
+  // ── LIBROS ────────────────────────────────────────────────
   books: [
-    {
-      title: "Colonia Penal",
-      year: 2023,
-      type: "Poesía",
-      image: "./assets/img/libros/coloniapenal.png",
-      resena:
-        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
-      comprar: "",
-      poemas: [
-        {
-          titulo: "Sin titulo",
-          texto: `Los acantilados son una invitación gentil
-          Saltar por voluntad propia
-          devolver a la carne la dignidad del vuelo.
-          Dicen que el corazón colapsa antes del encuentro.
-          Cuentan seis segundos eternos quienes han visto
-          para los oídos que lo precisan.
-          el descenso a las piedras.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `Esta isla quiso también escapar de su encierro continente.
-          la tensión incrustada en la piedra
-          en la palabra que nos despedaza por orden de la otra orilla
-          sentencia de quienes no se atreven a mirar el color de la carne.
-          Esta isla quiso ser más que un matadero
-          mucho más que la escritura del castigo.
-          En su intento de escape estuvo su condena.
-          Un surco testifica su escape y la ata a su pasado
-          
-          Una isla te rodea como el mar que la circunda.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `El cuerpo es una caja de resonancia 
-          sigue hablando tras el silencio
-          por eso se calla al cuerpo
-          hundido en el olvido
-          estallado en la piedra.
-          
-          Susurre la espuma justicia.`,
-        },
-      ],
-    },
-    {
-      title: "Tizne",
-      year: 2019,
-      type: "Poesía",
-      image: "./assets/img/libros/tizne.png",
-      resena:
-        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
-      comprar: "",
-      poemas: [
-        {
-          titulo: "Sin titulo",
-          texto: `Sin importar cuán grande
-          sea la bandera
-          jamás podrá cubrir
-          su propio charco
-          de sangre.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `¿Se puede hacer una fiesta escondiendo
-          a los muertos bajo la alfombra?
-          Pregunta el desdentado
-          Con los rieles en los pies.`,
-        },
-      ],
-    },
     {
       title: "Desbautízame",
       year: 2015,
@@ -836,6 +769,32 @@ donde el verbo se comienza a incendiar.`,
       ],
     },
     {
+      title: "Tizne",
+      year: 2019,
+      type: "Poesía",
+      image: "./assets/img/libros/tizne.png",
+      resena:
+        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Sin titulo",
+          texto: `Sin importar cuán grande
+          sea la bandera
+          jamás podrá cubrir
+          su propio charco
+          de sangre.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `¿Se puede hacer una fiesta escondiendo
+          a los muertos bajo la alfombra?
+          Pregunta el desdentado
+          Con los rieles en los pies.`,
+        },
+      ],
+    },
+    {
       title: "Rincones",
       year: 2010,
       type: "Poesía",
@@ -846,11 +805,11 @@ donde el verbo se comienza a incendiar.`,
       poemas: [
         {
           titulo: "Sin Titulo",
-          texto: `"A veces me siento 
+          texto: `“A veces me siento 
           una araña colgando  de un único hilo 
           en el viento aferrado 
           para no caer otra vez 
-          en la tristeza."`,
+          en la tristeza.”`,
         },
         {
           titulo: "Irónico",
@@ -863,19 +822,62 @@ donde el verbo se comienza a incendiar.`,
         },
       ],
     },
+    {
+      title: "Colonia Penal",
+      year: 2023,
+      type: "Poesía",
+      image: "./assets/img/libros/coloniapenal.png",
+      resena:
+        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Sin titulo",
+          texto: `Los acantilados son una invitación gentil
+          Saltar por voluntad propia
+          devolver a la carne la dignidad del vuelo.
+          Dicen que el corazón colapsa antes del encuentro.
+          Cuentan seis segundos eternos quienes han visto
+          para los oídos que lo precisan.
+          el descenso a las piedras.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `Esta isla quiso también escapar de su encierro continente.
+          la tensión incrustada en la piedra
+          en la palabra que nos despedaza por orden de la otra orilla
+          sentencia de quienes no se atreven a mirar el color de la carne.
+          Esta isla quiso ser más que un matadero
+          mucho más que la escritura del castigo.
+          En su intento de escape estuvo su condena.
+          Un surco testifica su escape y la ata a su pasado
+          
+          Una isla te rodea como el mar que la circunda.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `El cuerpo es una caja de resonancia 
+          sigue hablando tras el silencio
+          por eso se calla al cuerpo
+          hundido en el olvido
+          estallado en la piedra.
+          
+          Susurre la espuma justicia.`,
+        },
+      ],
+    },
   ],
- 
+
   // ── CONTACTO Y REDES ──────────────────────────────────────
   contact: {
-    email: "ismarivera@gmail.com",
-    whatsapp: "56995605137",
-    instagram: "https://www.instagram.com/ismariveral/",
-    youtube: "https://www.youtube.com/@ismariveraoficial",
-    facebook: "https://www.facebook.com/IsmaRiveraL",
+    email: "contacto@ismarivera.com",
+    whatsapp: "56912345678",
+    instagram: "https://instagram.com/ismarivera",
+    youtube: "https://youtube.com/@ismarivera",
     bandcamp: "https://ismarivera.bandcamp.com",
     spotify: "https://open.spotify.com/intl-es/artist/1m1mEMI4Yw5jr8aoguhgy8",
   },
- 
+
   // ── SITIO ─────────────────────────────────────────────────
   site: {
     title: "Isma Rivera",

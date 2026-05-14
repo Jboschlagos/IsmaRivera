@@ -555,6 +555,57 @@ donde el verbo se comienza a incendiar.`,
   // ── VIDEOS ────────────────────────────────────────────────
   videos: [
     {
+      youtubeId: "ZN7DC9lb51A",
+      title: "PM#4. Festival Poesía y Música",
+      year: 2021,
+      shortDesc:
+        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
+      longDesc:
+        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
+      credits: [
+        { rol: "Interpretación", nombre: "Isma Rivera" },
+        {
+          rol: "Músicos",
+          nombre:
+            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
+        },
+        {
+          rol: "Dirección y cámara",
+          nombre: "Fernando Pérez y Marcela Parra",
+        },
+        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
+        {
+          rol: "Evento",
+          nombre:
+            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
+        },
+        {
+          rol: "Enlaces",
+          nombre:
+            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
+        },
+      ],
+    },
+    {
+      youtubeId: "Od2zkAa2_q4",
+      title: "Pelea de perros",
+      year: 2020,
+      shortDesc:
+        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
+      longDesc: "",
+      credits: [
+        { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
+        {
+          rol: "Realizadores",
+          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
+        },
+        { rol: "Música", nombre: "Daniel Jesús Díaz" },
+        { rol: "Poesía y voz", nombre: "Isma Rivera" },
+        { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
+        { rol: "Fecha", nombre: "21 de noviembre de 2020" },
+      ],
+    },
+    {
       youtubeId: "K0JE1jFJG4w",
       title: "La última cena de los buitres",
       year: 2019,
@@ -608,25 +659,6 @@ donde el verbo se comienza a incendiar.`,
       ],
     },
     {
-      youtubeId: "Od2zkAa2_q4",
-      title: "Pelea de perros",
-      year: 2020,
-      shortDesc:
-        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
-      longDesc: "",
-      credits: [
-        { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
-        {
-          rol: "Realizadores",
-          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
-        },
-        { rol: "Música", nombre: "Daniel Jesús Díaz" },
-        { rol: "Poesía y voz", nombre: "Isma Rivera" },
-        { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
-        { rol: "Fecha", nombre: "21 de noviembre de 2020" },
-      ],
-    },
-    {
       youtubeId: "uJBwLT5c1RE",
       title: "Canción del simple",
       year: 2019,
@@ -646,42 +678,80 @@ donde el verbo se comienza a incendiar.`,
         },
       ],
     },
-    {
-      youtubeId: "ZN7DC9lb51A",
-      title: "PM#4. Festival Poesía y Música",
-      year: 2021,
-      shortDesc:
-        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
-      longDesc:
-        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
-      credits: [
-        { rol: "Interpretación", nombre: "Isma Rivera" },
-        {
-          rol: "Músicos",
-          nombre:
-            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
-        },
-        {
-          rol: "Dirección y cámara",
-          nombre: "Fernando Pérez y Marcela Parra",
-        },
-        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
-        {
-          rol: "Evento",
-          nombre:
-            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
-        },
-        {
-          rol: "Enlaces",
-          nombre:
-            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
-        },
-      ],
-    },
   ],
 
   // ── LIBROS ────────────────────────────────────────────────
   books: [
+    {
+      title: "Colonia Penal",
+      year: 2023,
+      type: "Poesía",
+      image: "./assets/img/libros/coloniapenal.png",
+      resena:
+        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Sin titulo",
+          texto: `Los acantilados son una invitación gentil
+          Saltar por voluntad propia
+          devolver a la carne la dignidad del vuelo.
+          Dicen que el corazón colapsa antes del encuentro.
+          Cuentan seis segundos eternos quienes han visto
+          para los oídos que lo precisan.
+          el descenso a las piedras.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `Esta isla quiso también escapar de su encierro continente.
+          la tensión incrustada en la piedra
+          en la palabra que nos despedaza por orden de la otra orilla
+          sentencia de quienes no se atreven a mirar el color de la carne.
+          Esta isla quiso ser más que un matadero
+          mucho más que la escritura del castigo.
+          En su intento de escape estuvo su condena.
+          Un surco testifica su escape y la ata a su pasado
+          
+          Una isla te rodea como el mar que la circunda.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `El cuerpo es una caja de resonancia 
+          sigue hablando tras el silencio
+          por eso se calla al cuerpo
+          hundido en el olvido
+          estallado en la piedra.
+          
+          Susurre la espuma justicia.`,
+        },
+      ],
+    },
+    {
+      title: "Tizne",
+      year: 2019,
+      type: "Poesía",
+      image: "./assets/img/libros/tizne.png",
+      resena:
+        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Sin titulo",
+          texto: `Sin importar cuán grande
+          sea la bandera
+          jamás podrá cubrir
+          su propio charco
+          de sangre.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `¿Se puede hacer una fiesta escondiendo
+          a los muertos bajo la alfombra?
+          Pregunta el desdentado
+          Con los rieles en los pies.`,
+        },
+      ],
+    },
     {
       title: "Desbautízame",
       year: 2015,
@@ -768,32 +838,7 @@ donde el verbo se comienza a incendiar.`,
         },
       ],
     },
-    {
-      title: "Tizne",
-      year: 2019,
-      type: "Poesía",
-      image: "./assets/img/libros/tizne.png",
-      resena:
-        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
-      comprar: "",
-      poemas: [
-        {
-          titulo: "Sin titulo",
-          texto: `Sin importar cuán grande
-          sea la bandera
-          jamás podrá cubrir
-          su propio charco
-          de sangre.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `¿Se puede hacer una fiesta escondiendo
-          a los muertos bajo la alfombra?
-          Pregunta el desdentado
-          Con los rieles en los pies.`,
-        },
-      ],
-    },
+
     {
       title: "Rincones",
       year: 2010,
@@ -819,50 +864,6 @@ donde el verbo se comienza a incendiar.`,
           Me considero patéticamente cínico:
           el arma del cínico sin argumentos
           una ironía.`,
-        },
-      ],
-    },
-    {
-      title: "Colonia Penal",
-      year: 2023,
-      type: "Poesía",
-      image: "./assets/img/libros/coloniapenal.png",
-      resena:
-        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
-      comprar: "",
-      poemas: [
-        {
-          titulo: "Sin titulo",
-          texto: `Los acantilados son una invitación gentil
-          Saltar por voluntad propia
-          devolver a la carne la dignidad del vuelo.
-          Dicen que el corazón colapsa antes del encuentro.
-          Cuentan seis segundos eternos quienes han visto
-          para los oídos que lo precisan.
-          el descenso a las piedras.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `Esta isla quiso también escapar de su encierro continente.
-          la tensión incrustada en la piedra
-          en la palabra que nos despedaza por orden de la otra orilla
-          sentencia de quienes no se atreven a mirar el color de la carne.
-          Esta isla quiso ser más que un matadero
-          mucho más que la escritura del castigo.
-          En su intento de escape estuvo su condena.
-          Un surco testifica su escape y la ata a su pasado
-          
-          Una isla te rodea como el mar que la circunda.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `El cuerpo es una caja de resonancia 
-          sigue hablando tras el silencio
-          por eso se calla al cuerpo
-          hundido en el olvido
-          estallado en la piedra.
-          
-          Susurre la espuma justicia.`,
         },
       ],
     },

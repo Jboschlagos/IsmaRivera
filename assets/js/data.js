@@ -3,7 +3,7 @@
  * Editá aquí para actualizar discos, libros, videos, contacto y redes.
  */
 
-window.ISMA_DATA = {
+const ISMA_DATA = {
   // ── DISCOS (más reciente primero) ─────────────────────────
   albums: [
     {

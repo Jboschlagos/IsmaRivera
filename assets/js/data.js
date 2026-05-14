@@ -3,9 +3,57 @@
  * Editá aquí para actualizar discos, libros, videos, contacto y redes.
  */
 
-const DATA = {
-  // ── DISCOS ────────────────────────────────────────────────
+window.ISMA_DATA = {
+  // ── DISCOS (más reciente primero) ─────────────────────────
   albums: [
+    {
+      title: "El Silencio",
+      year: 2022,
+      description: "Sencillo",
+      image: "./assets/img/discos/el_silencio.png",
+      spotify:
+        "https://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
+      bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
+      resena:
+        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
+      tracklist: [
+        {
+          numero: 1,
+          titulo: "El Silencio",
+          duracion: "4:13",
+          letra: `Crecí entre hombres que adoraban el silencio
+creí que eran falsos ellos y todos sus nombres
+feliz fui siendo niña abierto en ese vértice.
+feliz fui en la fuerza de mujeres y desvelos.
+
+Intentaron tanto hacer que el hombre que parezco
+fuera modelo de macho recio, un campeón.
+Competir.
+
+Crecí en las penas de este fuego que es espanto
+crecí y vi amigos convertidos en sus padres
+feliz me hice siendo entre vestidos y humos cómplices
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron tapar tanto a este hombre que soy
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.
+
+Creí que sus formas no eran mías
+que para allá no voy
+feliz fue mi rabia al encontrar la forma de explotar.
+
+Intentaron callar tanto a este hombre que soy
+
+que no refleja nada al que querían: un varón.
+Competir
+por la casa, el colegio, por el auto
+y enterrando bien adentro en el silencio tu miedo.`,
+        },
+      ],
+    },
     {
       title: "La última cena de los buitres",
       year: 2019,
@@ -16,10 +64,10 @@ const DATA = {
       bandcamp:
         "https://selloprecario.bandcamp.com/album/la-ltima-cena-de-los-buitres",
       resena:
-        "La última cena de los buitres (2019) de Isma Rivera es un trabajo de factura colectiva que oscila constantemente entre la solemnidad y la rabia callejera. Los poemas vueltos “cante” tributan la tradición oral de distintos territorios y la voz actúa como columna vertebral, haciendo de este disco una experiencia poética de la oralidad. Los géneros musicales encuentran sus límites difuminados, abarcando así sonidos que van del postpunk a la música de raíz.",
+        "La última cena de los buitres (2019) de Isma Rivera es un trabajo de factura colectiva que oscila constantemente entre la solemnidad y la rabia callejera. Los poemas vueltos "cante" tributan la tradición oral de distintos territorios y la voz actúa como columna vertebral, haciendo de este disco una experiencia poética de la oralidad. Los géneros musicales encuentran sus límites difuminados, abarcando así sonidos que van del postpunk a la música de raíz.",
       download: {
         label: "Descargar Cuadernillo",
-        url: "/assets/docs/La.última.cena.de.los.buitres_Isma.Rivera.2020.pdf",
+        url: "/assets/docs/La.última.cena.de.los.buitres_Isma.Rivera.2020.pdf",
       },
       tracklist: [
         {
@@ -52,7 +100,7 @@ const DATA = {
         {
           numero: 2,
           titulo: "Sin importar cuán grande sea la bandera",
-          duracion: "0.12",
+          duracion: "0:12",
           letra: `Sin importar cuán grande sea
 la bandera
 jamás podrá cubrir su propio charco
@@ -158,8 +206,8 @@ de los caballos!`,
         los inviernos con olor a parafina
         mi mamá lavando los platos
         mientras por fuera la Funa al Mamo
-        “anda tú, voy altiro”.
-        Mi hermano llorando “atropellaron al perro”
+        "anda tú, voy altiro".
+        Mi hermano llorando "atropellaron al perro"
         cuatro fueron enterrados
         dos de sangre
         y esa curva siempre
@@ -273,7 +321,7 @@ y no puedo ser sincero.`,
         },
         {
           numero: 10,
-          titulo: "Canción del simple",
+          titulo: "Lluvia",
           duracion: "0:29",
           letra: `A los árboles no les interesa el significado del
 canto de los pájaros ni a las olas
@@ -315,54 +363,6 @@ hoy el carnaval es nuestro, de todos nuevamente
 y nos unimos callejeros viejos canes
 somos la jauría que creíste muerta de hambre
 hambre hay y eres la cena esperada.`,
-        },
-      ],
-    },
-    {
-      title: "El Silencio",
-      year: 2022,
-      description: "Sencillo",
-      image: "./assets/img/discos/el_silencio.png",
-      spotify:
-        "hhttps://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
-      bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
-      resena:
-        "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",
-      tracklist: [
-        {
-          numero: 1,
-          titulo: "El Silencio",
-          duracion: "4:13",
-          letra: `Crecí entre hombres que adoraban el silencio
-creí que eran falsos ellos y todos sus nombres
-feliz fui siendo niña abierto en ese vértice.
-feliz fui en la fuerza de mujeres y desvelos.
-
-Intentaron tanto hacer que el hombre que parezco
-fuera modelo de macho recio, un campeón.
-Competir.
-
-Crecí en las penas de este fuego que es espanto
-crecí y vi amigos convertidos en sus padres
-feliz me hice siendo entre vestidos y humos cómplices
-feliz fue mi rabia al encontrar la forma de explotar.
-
-Intentaron tapar tanto a este hombre que soy
-que no refleja nada al que querían: un varón.
-Competir
-por la casa, el colegio, por el auto
-y enterrando bien adentro en el silencio tu miedo.
-
-Creí que sus formas no eran mías
-que para allá no voy
-feliz fue mi rabia al encontrar la forma de explotar.
-
-Intentaron callar tanto a este hombre que soy
-
-que no refleja nada al que querían: un varón.
-Competir
-por la casa, el colegio, por el auto
-y enterrando bien adentro en el silencio tu miedo.`,
         },
       ],
     },
@@ -552,8 +552,56 @@ donde el verbo se comienza a incendiar.`,
     },
   ],
 
-  // ── VIDEOS ────────────────────────────────────────────────
+  // ── VIDEOS (más reciente primero) ─────────────────────────
   videos: [
+    {
+      youtubeId: "ZN7DC9lb51A",
+      title: "PM#4. Festival Poesía y Música",
+      year: 2021,
+      shortDesc:
+        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
+      longDesc:
+        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
+      credits: [
+        { rol: "Interpretación", nombre: "Isma Rivera" },
+        {
+          rol: "Músicos",
+          nombre:
+            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
+        },
+        { rol: "Dirección y cámara", nombre: "Fernando Pérez y Marcela Parra" },
+        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
+        {
+          rol: "Evento",
+          nombre:
+            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
+        },
+        {
+          rol: "Enlaces",
+          nombre:
+            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
+        },
+      ],
+    },
+    {
+      youtubeId: "Od2zkAa2_q4",
+      title: "Pelea de perros",
+      year: 2020,
+      shortDesc:
+        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
+      longDesc: "",
+      credits: [
+        { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
+        {
+          rol: "Realizadores",
+          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
+        },
+        { rol: "Música", nombre: "Daniel Jesús Díaz" },
+        { rol: "Poesía y voz", nombre: "Isma Rivera" },
+        { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
+        { rol: "Fecha", nombre: "21 de noviembre de 2020" },
+      ],
+    },
     {
       youtubeId: "K0JE1jFJG4w",
       title: "La última cena de los buitres",
@@ -608,25 +656,6 @@ donde el verbo se comienza a incendiar.`,
       ],
     },
     {
-      youtubeId: "Od2zkAa2_q4",
-      title: "Pelea de perros",
-      year: 2020,
-      shortDesc:
-        "Video ensamble artístico. Se conjugan música, poesía, documentación audiovisual y obra visual. Canción del disco «La última cena de los buitres» (Sello Precario, 2019).",
-      longDesc: "",
-      credits: [
-        { rol: "Autora e idea original", nombre: "Daniela Castillo C." },
-        {
-          rol: "Realizadores",
-          nombre: "Isma Rivera, Claudio Meza, Daniela Castillo C.",
-        },
-        { rol: "Música", nombre: "Daniel Jesús Díaz" },
-        { rol: "Poesía y voz", nombre: "Isma Rivera" },
-        { rol: "Documentación audiovisual", nombre: "Claudio Meza" },
-        { rol: "Fecha", nombre: "21 de noviembre de 2020" },
-      ],
-    },
-    {
       youtubeId: "uJBwLT5c1RE",
       title: "Canción del simple",
       year: 2019,
@@ -646,42 +675,80 @@ donde el verbo se comienza a incendiar.`,
         },
       ],
     },
+  ],
+
+  // ── LIBROS (más reciente primero) ─────────────────────────
+  books: [
     {
-      youtubeId: "ZN7DC9lb51A",
-      title: "PM#4. Festival Poesía y Música",
-      year: 2021,
-      shortDesc:
-        "PM#4. Festival Poesía y Música. 30 de octubre de 2021. Centro Cultural San Joaquín, Santiago de Chile.",
-      longDesc:
-        "Registro en vivo de la presentación de Isma Rivera en el marco del Festival Poesía y Música (PM#4), donde confluyen poesía, música y experimentación escénica.",
-      credits: [
-        { rol: "Interpretación", nombre: "Isma Rivera" },
+      title: "Colonia Penal",
+      year: 2023,
+      type: "Poesía",
+      image: "./assets/img/libros/coloniapenal.png",
+      resena:
+        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
+      comprar: "",
+      poemas: [
         {
-          rol: "Músicos",
-          nombre:
-            "Ramírez Neira (guitarra acústica y coros), Juan Morel (guitarra eléctrica), Carla Gaete (voces y kultrún)",
+          titulo: "Sin titulo",
+          texto: `Los acantilados son una invitación gentil
+          Saltar por voluntad propia
+          devolver a la carne la dignidad del vuelo.
+          Dicen que el corazón colapsa antes del encuentro.
+          Cuentan seis segundos eternos quienes han visto
+          para los oídos que lo precisan.
+          el descenso a las piedras.`,
         },
         {
-          rol: "Dirección y cámara",
-          nombre: "Fernando Pérez y Marcela Parra",
+          titulo: "Sin titulo",
+          texto: `Esta isla quiso también escapar de su encierro continente.
+          la tensión incrustada en la piedra
+          en la palabra que nos despedaza por orden de la otra orilla
+          sentencia de quienes no se atreven a mirar el color de la carne.
+          Esta isla quiso ser más que un matadero
+          mucho más que la escritura del castigo.
+          En su intento de escape estuvo su condena.
+          Un surco testifica su escape y la ata a su pasado
+          
+          Una isla te rodea como el mar que la circunda.`,
         },
-        { rol: "Producción audiovisual", nombre: "Pablo Fante" },
         {
-          rol: "Evento",
-          nombre:
-            "PM#4. Festival Poesía y Música — 30 de octubre de 2021, Centro Cultural San Joaquín, Santiago de Chile",
-        },
-        {
-          rol: "Enlaces",
-          nombre:
-            "www.festivalpm.cl | facebook.com/poesiaymusicapm | instagram.com/festivalpoesiaymusica | twitter.com/poesiaymusicapm",
+          titulo: "Sin titulo",
+          texto: `El cuerpo es una caja de resonancia 
+          sigue hablando tras el silencio
+          por eso se calla al cuerpo
+          hundido en el olvido
+          estallado en la piedra.
+          
+          Susurre la espuma justicia.`,
         },
       ],
     },
-  ],
-
-  // ── LIBROS ────────────────────────────────────────────────
-  books: [
+    {
+      title: "Tizne",
+      year: 2019,
+      type: "Poesía",
+      image: "./assets/img/libros/tizne.png",
+      resena:
+        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
+      comprar: "",
+      poemas: [
+        {
+          titulo: "Sin titulo",
+          texto: `Sin importar cuán grande
+          sea la bandera
+          jamás podrá cubrir
+          su propio charco
+          de sangre.`,
+        },
+        {
+          titulo: "Sin titulo",
+          texto: `¿Se puede hacer una fiesta escondiendo
+          a los muertos bajo la alfombra?
+          Pregunta el desdentado
+          Con los rieles en los pies.`,
+        },
+      ],
+    },
     {
       title: "Desbautízame",
       year: 2015,
@@ -769,32 +836,6 @@ donde el verbo se comienza a incendiar.`,
       ],
     },
     {
-      title: "Tizne",
-      year: 2019,
-      type: "Poesía",
-      image: "./assets/img/libros/tizne.png",
-      resena:
-        "El libro gira en torno a la imagen del tizne como huella que mancha y oculta, pero también revela una violencia latente. Más que una denuncia directa, la escritura sugiere una herida en la dignidad humana, utilizando la poesía como espacio de insinuación antes que de afirmación explícita. Por Verónica Jiménez Dotte",
-      comprar: "",
-      poemas: [
-        {
-          titulo: "Sin titulo",
-          texto: `Sin importar cuán grande
-          sea la bandera
-          jamás podrá cubrir
-          su propio charco
-          de sangre.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `¿Se puede hacer una fiesta escondiendo
-          a los muertos bajo la alfombra?
-          Pregunta el desdentado
-          Con los rieles en los pies.`,
-        },
-      ],
-    },
-    {
       title: "Rincones",
       year: 2010,
       type: "Poesía",
@@ -805,11 +846,11 @@ donde el verbo se comienza a incendiar.`,
       poemas: [
         {
           titulo: "Sin Titulo",
-          texto: `“A veces me siento 
+          texto: `"A veces me siento 
           una araña colgando  de un único hilo 
           en el viento aferrado 
           para no caer otra vez 
-          en la tristeza.”`,
+          en la tristeza."`,
         },
         {
           titulo: "Irónico",
@@ -822,58 +863,15 @@ donde el verbo se comienza a incendiar.`,
         },
       ],
     },
-    {
-      title: "Colonia Penal",
-      year: 2023,
-      type: "Poesía",
-      image: "./assets/img/libros/coloniapenal.png",
-      resena:
-        "El libro trabaja sobre la memoria y la ausencia, devolviendo voz a cuerpos silenciados por la historia reciente. Construye una imagen fragmentada del encierro —isla, colonia, celda, cuerpo— donde el lenguaje intenta resistir el olvido. Es un gesto de duelo y testimonio que insiste en recordar lo que se quiso borrar.",
-      comprar: "",
-      poemas: [
-        {
-          titulo: "Sin titulo",
-          texto: `Los acantilados son una invitación gentil
-          Saltar por voluntad propia
-          devolver a la carne la dignidad del vuelo.
-          Dicen que el corazón colapsa antes del encuentro.
-          Cuentan seis segundos eternos quienes han visto
-          para los oídos que lo precisan.
-          el descenso a las piedras.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `Esta isla quiso también escapar de su encierro continente.
-          la tensión incrustada en la piedra
-          en la palabra que nos despedaza por orden de la otra orilla
-          sentencia de quienes no se atreven a mirar el color de la carne.
-          Esta isla quiso ser más que un matadero
-          mucho más que la escritura del castigo.
-          En su intento de escape estuvo su condena.
-          Un surco testifica su escape y la ata a su pasado
-          
-          Una isla te rodea como el mar que la circunda.`,
-        },
-        {
-          titulo: "Sin titulo",
-          texto: `El cuerpo es una caja de resonancia 
-          sigue hablando tras el silencio
-          por eso se calla al cuerpo
-          hundido en el olvido
-          estallado en la piedra.
-          
-          Susurre la espuma justicia.`,
-        },
-      ],
-    },
   ],
 
   // ── CONTACTO Y REDES ──────────────────────────────────────
   contact: {
-    email: "contacto@ismarivera.com",
-    whatsapp: "56912345678",
-    instagram: "https://instagram.com/ismarivera",
-    youtube: "https://youtube.com/@ismarivera",
+    email: "ismarivera@gmail.com",
+    whatsapp: "56995605137",
+    instagram: "https://www.instagram.com/ismariveral/",
+    youtube: "https://www.youtube.com/@ismariveraoficial",
+    facebook: "https://www.facebook.com/IsmaRiveraL",
     bandcamp: "https://ismarivera.bandcamp.com",
     spotify: "https://open.spotify.com/intl-es/artist/1m1mEMI4Yw5jr8aoguhgy8",
   },
@@ -884,5 +882,3 @@ donde el verbo se comienza a incendiar.`,
     subtitle: "Poeta Cantor",
   },
 };
-
-window.ISMA_DATA = DATA;

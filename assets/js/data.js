@@ -869,16 +869,6 @@ donde el verbo se comienza a incendiar.`,
     },
   ],
 
-  // ── CONTACTO Y REDES ──────────────────────────────────────
-  contact: {
-    email: "contacto@ismarivera.com",
-    whatsapp: "56912345678",
-    instagram: "https://instagram.com/ismarivera",
-    youtube: "https://youtube.com/@ismarivera",
-    bandcamp: "https://ismarivera.bandcamp.com",
-    spotify: "https://open.spotify.com/intl-es/artist/1m1mEMI4Yw5jr8aoguhgy8",
-  },
-
   // ── SITIO ─────────────────────────────────────────────────
   site: {
     title: "Isma Rivera",

@@ -763,12 +763,12 @@ donde el verbo se comienza a incendiar.`,
       poemas: [
         {
           titulo: "Letras en la llaga",
-          texto: `Do you have enough bone-broken limbs to cover the sun?
+          texto: `<small>Do you have enough bone-broken limbs to cover the sun?
           Hand me over your dead and give me the list of their names
           in one thousand two hundred word limit.
           Today, my body was a TV d massacre that had to fit into sound-bites
           and word limits and moves those that are desensitized to terrorist blood.
-          (Rafeef Ziadah)
+          (Rafeef Ziadah)</small>
           Mi nombre está marcado por el fuego
           de doce tribus como doce semillas
           quemadas por el fósforo blanco
@@ -850,11 +850,12 @@ donde el verbo se comienza a incendiar.`,
       poemas: [
         {
           titulo: "Sin Titulo",
-          texto: `“A veces me siento 
-          una araña colgando  de un único hilo 
+          texto: `A veces me siento 
+          una araña colgando  
+          de un único hilo 
           en el viento aferrado 
           para no caer otra vez 
-          en la tristeza.”`,
+          en la tristeza.`,
         },
         {
           titulo: "Irónico",

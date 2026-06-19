@@ -12,7 +12,7 @@ const DATA = {
       description: "Sencillo",
       image: "./assets/img/discos/el_silencio.png",
       spotify:
-        "hhttps://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
+        "https://open.spotify.com/intl-es/album/292XdmKQX3BFwkFgs2jecB?si=32Ba3pfmTB-ow-DN5tfQIA",
       bandcamp: "https://ismarivera.bandcamp.com/album/el-silencio",
       resena:
         "Sencillo en colaboración con el músico argentino Pablo Polidoro. Grabado y producido durante la pandemia Covid 19, entre las ciudades de Santiago y Buenos Aires.",

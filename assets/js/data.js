@@ -763,7 +763,7 @@ donde el verbo se comienza a incendiar.`,
       poemas: [
         {
           titulo: "Letras en la llaga",
-          texto: `<small style="font-size: 0.85em;"><em><span style="display: block; padding-left: 1.2em; text-indent: -1.2em; white-space: pre-line;">Do you have enough bone-broken limbs to cover the sun?
+          texto: `<small style="font-size: 0.75em;"><em><span style="display: block; padding-left: 1.2em; text-indent: -1.2em; white-space: pre-line;">Do you have enough bone-broken limbs to cover the sun?
           Hand me over your dead and give me the list of their names
           in one thousand two hundred word limit.
           Today, my body was a TV d massacre that had to fit into sound-bites

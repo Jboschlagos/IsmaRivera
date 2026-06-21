@@ -763,15 +763,17 @@ donde el verbo se comienza a incendiar.`,
       poemas: [
         {
           titulo: "Letras en la llaga",
-          texto: `<small><em>Do you have enough bone-broken limbs to cover the sun?
-          Hand me over your dead and give me the list of their names
-          in one thousand two hundred word limit.
-          Today, my body was a TV d massacre that had to fit into sound-bites
-          and word limits and moves those that are desensitized to terrorist blood.
-          (Rafeef Ziadah)</em></small>
+          texto: `<small style="font-size: 0.85em;"><em>Do you have enough bone-broken limbs to cover the sun?
+Hand me over your dead and give me the list of their names
+in one thousand two hundred word limit.
+Today, my body was a TV d massacre that had to fit into sound-bites
+and word limits and moves those that are desensitized to terrorist blood.
+(Rafeef Ziadah)</em></small>
+
           Mi nombre está marcado por el fuego
           de doce tribus como doce semillas
           quemadas por el fósforo blanco
+          de la estrella nación.
           Mi nombre está marcado por la guerra
           el odio al padre, el desprecio del hijo
           la lucha de clanes
@@ -798,43 +800,43 @@ donde el verbo se comienza a incendiar.`,
         {
           titulo: "Desbautízame",
           texto: `Me niegas la caída al pozo
-          a manos de este yo cansado
-          aun cuando es claro que es tarde
-          que como resonaron las palabras de otro
-          no merece la pena matarse, siempre
-          lo hace uno demasiado tarde.
-          
-          carnada entre buitres hambrientos.
-          
-          Se entregó su cuerpo al látigo
-          con la docilidad del clavo
-          o del suicidio implacable:
-          la espina.
-          Lo asististe —hipócrita de hipócritas—
-          en su frente. No me digas
-          que ese pobre es tu hijo.
-          
-          Y entre adorar y orar te dieron oro.
-          
-          Cruzaste la vereda sobre la cruz de tu hijo
-          condenas el autosacrificio
-          te sentaste a la mesa de los llenos
-          engulliste manjares
-          
-          manchados de sangre salada, las costras
-          de los que no aceptamos cruzar
-          de los que damos el pellejo cuando cruje
-          serán astillas en sus tráqueas.
-          
-          Han parido en un lugar del Edén
-          el génesis de este rojo apocalipsis.
-          
-          Nada más podrá nacer de la tierra que el polvo
-          tu regalo fue el frío y el olvido
-          la piedra que no suda ni llora
-          la mancha en la sotana, la culpa
-          Pero arrojaste a tu hijo a cargarla
-          del vacío ante el plato de comida.`,
+condenas el autosacrificio
+a manos de este yo cansado
+aun cuando es claro que es tarde
+que como resonaron las palabras de otro
+no merece la pena matarse, siempre
+lo hace uno demasiado tarde.
+
+Pero arrojaste a tu hijo a cargarla
+carnada entre buitres hambrientos.
+
+Se entregó su cuerpo al látigo
+con la docilidad del clavo
+o del suicidio implacable:
+la espina.
+Lo asististe -hipócrita de hipócritas-
+en su frente. No me digas
+que ese pobre es tu hijo.
+
+Y entre adorar y orar te dieron oro.
+
+Cruzaste la vereda sobre la cruz de tu hijo
+te sentaste a la mesa de los llenos
+engulliste manjares
+manchados de sangre salada, las costras
+
+de los que no aceptamos cruzar
+de los que damos el pellejo cuando cruje
+serán astillas en sus tráqueas.
+
+Han parido en un lugar del Edén
+el génesis de este rojo apocalipsis.
+
+Nada más podrá nacer de la tierra que el polvo
+tu regalo fue el frío y el olvido
+la piedra que no suda ni llora
+la mancha en la sotana, la culpa
+del vacío ante el plato de comida.`,
         },
       ],
     },

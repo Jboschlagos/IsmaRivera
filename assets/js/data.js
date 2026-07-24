@@ -555,6 +555,27 @@ donde el verbo se comienza a incendiar.`,
   // ── VIDEOS ────────────────────────────────────────────────
   videos: [
     {
+      youtubeId: "Dp1k70p7JGs",
+      title: "Constelación de los caídos",
+      year: 2026,
+      shortDesc:
+        "Video oficial de «Constelación de los caídos». Poema hecho cante y lamento, como forma de homenaje a todas las mujeres que aún buscan a sus familiares desaparecidos por la dictadura cívico militar chilena.",
+      longDesc: `Levanté cada piedra por minúscula que fuera
+esperando que me hablaras en una tela olvidada.
+Grité, por los pasillos del desierto:
+"Con la astilla de un fémur yo me conformo"
+Quisiste aparecer desaparecer.
+
+Grabado, mezclado y masterizado en los estudios de Patán Records, comuna de Lo Prado, Santiago de Chile, durante el mes de enero de 2026.`,
+      credits: [
+        { rol: "Dirección y edición", nombre: "Laura B. Grondona" },
+        { rol: "Asistencia de dirección", nombre: "Marcia Muñoz" },
+        { rol: "Voz", nombre: "Isma Rivera" },
+        { rol: "Teclado", nombre: "Sonido Fango" },
+        { rol: "Guitarra eléctrica", nombre: "Rendú Dichao" },
+      ],
+    },
+    {
       youtubeId: "ZN7DC9lb51A",
       title: "PM#4. Festival Poesía y Música",
       year: 2021,
@@ -676,27 +697,6 @@ donde el verbo se comienza a incendiar.`,
           rol: "Arreglos, interpretación, grabación y producción",
           nombre: "Ramírez Neira — «La pieza oscura», estudio andante",
         },
-      ],
-    },
-    {
-      youtubeId: "Dp1k70p7JGs",
-      title: "Constelación de los caídos",
-      year: 2026,
-      shortDesc:
-        "Video oficial de «Constelación de los caídos». Poema hecho cante y lamento, como forma de homenaje a todas las mujeres que aún buscan a sus familiares desaparecidos por la dictadura cívico militar chilena.",
-      longDesc: `Levanté cada piedra por minúscula que fuera
-esperando que me hablaras en una tela olvidada.
-Grité, por los pasillos del desierto:
-"Con la astilla de un fémur yo me conformo"
-Quisiste aparecer desaparecer.
-
-Grabado, mezclado y masterizado en los estudios de Patán Records, comuna de Lo Prado, Santiago de Chile, durante el mes de enero de 2026.`,
-      credits: [
-        { rol: "Dirección y edición", nombre: "Laura B. Grondona" },
-        { rol: "Asistencia de dirección", nombre: "Marcia Muñoz" },
-        { rol: "Voz", nombre: "Isma Rivera" },
-        { rol: "Teclado", nombre: "Sonido Fango" },
-        { rol: "Guitarra eléctrica", nombre: "Rendú Dichao" },
       ],
     },
   ],

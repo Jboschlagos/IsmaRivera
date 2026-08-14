@@ -7,6 +7,32 @@ const DATA = {
   // ── DISCOS ────────────────────────────────────────────────
   albums: [
     {
+      title: "Constelación de los caídos",
+      year: 2026,
+      description: "Sencillo",
+      image: "./assets/img/discos/constelacionDeLosCaidos.jpg",
+      spotify:
+        "https://open.spotify.com/intl-es/track/7wkgEuws0qZ283XangnrQY?si=c1ad22ca93e54148",
+      bandcamp: "",
+      resena: "",
+      tracklist: [
+        {
+          numero: 1,
+          titulo: "Constelación de los caidos",
+          duracion: "3:37",
+          letra: `Levanté cada piedra por minúscula que fuera
+esperando que me hablaras en una tela olvidada.
+
+Grité por los pasillos del desierto
+yo grité:
+"Con la astilla de un fémur yo me conformo"
+
+Quiste aparecer
+desaparecer.`,
+        },
+      ],
+    },
+    {
       title: "El Silencio",
       year: 2022,
       description: "Sencillo",

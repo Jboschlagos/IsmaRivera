@@ -1,6 +1,6 @@
 /**
  * data.js — Fuente única de datos del sitio Isma Rivera
- * Editá aquí para actualizar discos, libros, videos, contacto y redes.
+ * Edita aquí para actualizar discos, libros, videos, contacto y redes.
  */
 
 const DATA = {

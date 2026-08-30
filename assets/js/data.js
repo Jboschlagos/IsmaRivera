@@ -27,7 +27,7 @@ Grité por los pasillos del desierto
 yo grité:
 "Con la astilla de un fémur yo me conformo"
 
-Quiste aparecer
+Quisiste aparecer
 desaparecer.`,
         },
       ],
